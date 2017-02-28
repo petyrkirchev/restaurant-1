@@ -1,0 +1,9 @@
+/*Carousel Styling*/
+
+.carousel-caption h1{
+    font-size: 5.4em;
+    font-family: "Pasifico",cursive;
+}
+.carousel-caption p{
+    font-size: 2em; 
+}
