@@ -1,5 +1,10 @@
 /*Carousel Styling*/
-
+#myCarousel img{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
 .carousel-caption h1{
     font-size: 5.4em;
     font-family: "Pasifico",cursive;
