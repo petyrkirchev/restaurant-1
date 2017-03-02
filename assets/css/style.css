@@ -1,14 +1,112 @@
 /*Carousel Styling*/
-#myCarousel img{
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
+
+#myCarousel img {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
-.carousel-caption h1{
-    font-size: 5.4em;
-    font-family: "Pasifico",cursive;
+
+.navbar,
+.navbar-fixed-top {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 24%, rgba(0, 0, 0, 0.35) 65%, rgba(0, 0, 0, 0.15) 85%, rgba(0, 0, 0, 0.05) 100%);
+    border: none;
+    display: inline-block;
 }
-.carousel-caption p{
-    font-size: 2em; 
+
+.container {
+    width: 100%;
+    padding: 0;
 }
+
+/*NAV BAR STYLE*/
+
+div.container-fluid {
+    width: 1200px;
+}
+
+@media all and (max-width:1199px) {
+    div.container-fluid {
+        width: 1000px;
+    }
+    #petNav,
+    #petNav>li>a {
+        color: white;
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: 12px;
+    }
+}
+@media all and (max-width:999px) {
+    div.container-fluid {
+        width: 900px;
+    }
+}
+@media all and (max-width:899px) {
+    div.container-fluid {
+        display: none;
+    }
+}
+
+.nav,
+.navbar-nav {
+    margin: 0 auto;
+    height: 80px;
+    vertical-align: bottom;
+}
+
+#petNav {
+    color: white;
+    margin-top: 45px;
+    list-style: none;
+    display: inline-flex;
+    float: right;
+}
+
+#petNav img {
+    margin-top: -5px;
+}
+
+#petNav,
+#petNav>li>a {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+#petNav>li>a {
+    text-decoration: none;
+}
+
+#petNav>li {
+    padding-left: 20px;
+}
+
+#petNav>li:last-child {
+    position: relative;
+    bottom: 10px;
+}
+
+/*<span id="hoverSpan" >ОБАДЕТЕ НИ СЕ<span>*/
+
+/*#hoverSpan {
+    position: relative;
+    bottom: 32px;
+    right: 80px;
+    border: solid #4f7fff 1px;
+    border-radius: 3px;
+    padding: 2px 5px 2px 7px;
+    font-size: 12px;
+    background: #4f7fff;
+}
+
+#hoverSpan:after {
+    content: "";
+    position: relative;
+    bottom: -22px;
+    right: 50px;
+    border-width: 5px 5px 0;
+    border-style: solid;
+    border-color: #4f7fff transparent;
+}*/
