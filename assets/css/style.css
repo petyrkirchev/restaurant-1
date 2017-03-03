@@ -136,7 +136,7 @@ div.container-fluid {
         padding-left: 13em;
     }
 }
-@media all and (max-width:780px) {
+@media all and (max-width:768px) {
     div#nav-mobile img {
         height: 65px;
     }
@@ -170,7 +170,6 @@ div.container-fluid {
         padding-left: 8em;
     }
 }
-
 @media all and (max-width:620px) {
     div#nav-mobile img {
         height: 65px;
@@ -188,7 +187,6 @@ div.container-fluid {
         padding-left: 6em;
     }
 }
-
 @media all and (max-width:568px) {
     div#nav-mobile img {
         height: 50px;
@@ -206,7 +204,91 @@ div.container-fluid {
         padding-left: 6em;
     }
 }
-
+@media all and (max-width:480px) {
+    div#nav-mobile img {
+        height: 50px;
+    }
+    div#nav-mobile div:nth-child(1) {
+        width: 33%;
+        padding-left: 1em;
+    }
+    div#nav-mobile div:nth-child(2) {
+        width: 33%;
+        padding-left: 5em;
+    }
+    div#nav-mobile div:nth-child(3) {
+        width: 33%;
+        padding-left: 5em;
+    }
+}
+@media all and (max-width:420px) {
+    div#nav-mobile img {
+        height: 42px;
+    }
+    div#nav-mobile div:nth-child(1) {
+        width: 33%;
+        padding-left: 1em;
+    }
+    div#nav-mobile div:nth-child(2) {
+        width: 33%;
+        padding-left: 4em;
+    }
+    div#nav-mobile div:nth-child(3) {
+        width: 33%;
+        padding-left: 4em;
+    }
+}
+@media all and (max-width:390px) {
+    div#nav-mobile img {
+        height: 40px;
+    }
+    div#nav-mobile div:nth-child(1) {
+        width: 33%;
+        padding-left: 1em;
+    }
+    div#nav-mobile div:nth-child(2) {
+        width: 33%;
+        padding-left: 3em;
+    }
+    div#nav-mobile div:nth-child(3) {
+        width: 33%;
+        padding-left: 4em;
+    }
+}
+@media all and (max-width:360px) {
+    div#nav-mobile img {
+        height: 38px;
+    }
+    div#nav-mobile div:nth-child(1) {
+        width: 33%;
+        padding-left: 1em;
+    }
+    div#nav-mobile div:nth-child(2) {
+        width: 33%;
+        padding-left: 3m;
+    }
+    div#nav-mobile div:nth-child(3) {
+        width: 33%;
+        padding-left: 3em;
+    }
+}
+@media all and (max-width:320px) {
+    div#nav-mobile img {
+        height: 35px;
+    }
+    div#nav-mobile div:nth-child(1) {
+        width: 33%;
+        padding-left: 1em;
+    }
+    div#nav-mobile div:nth-child(2) {
+        width: 33%;
+        padding-left: 2.5em;
+    }
+    div#nav-mobile div:nth-child(3) {
+        width: 33%;
+        padding-left: 2.5em;
+    }
+}
 
 /*<span id="hoverSpan" >ОБАДЕТЕ НИ СЕ<span>*/
 
