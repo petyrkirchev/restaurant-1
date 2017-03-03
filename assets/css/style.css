@@ -333,24 +333,31 @@ div.container-fluid {
 
 /*<span id="hoverSpan" >ОБАДЕТЕ НИ СЕ<span>*/
 
-
-/*#hoverSpan {
+#hoverSpan {
+    visibility: hidden;
     position: relative;
     bottom: 32px;
-    right: 80px;
-    border: solid #4f7fff 1px;
+    left: 60px;
+    border: solid #0d6490 1px;
     border-radius: 3px;
     padding: 2px 5px 2px 7px;
     font-size: 12px;
-    background: #4f7fff;
+    background: #0d6490;
 }
 
-#hoverSpan:after {
+#hoverSpanAfter {
+    visibility: hidden;
     content: "";
     position: relative;
-    bottom: -22px;
-    right: 50px;
+    bottom: 8px;
+    right: 0px;
     border-width: 5px 5px 0;
     border-style: solid;
-    border-color: #4f7fff transparent;
-}*/
+    border-color: #0d6490 transparent;
+}
+
+#shlushalka {
+    position: relative;
+    top: -2px;
+    left: 135px;
+}

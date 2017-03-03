@@ -12,10 +12,10 @@
 </head>
 
 <body>
- <!--................. HAMBURGER MENU...............-->
+  <!--................. HAMBURGER MENU...............-->
   <div id="appearMenu">
     <ul>
-      <li>ОБАДЕТЕ НИ СЕ <img  height="50px" src="assets/images/call.png"></li>
+      <li>ОБАДЕТЕ НИ СЕ <img height="50px" src="assets/images/call.png"></li>
       <li>МЕНЮ</li>
       <li><a class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
       <li>СВЪРЖЕТЕ СЕ С НАС</li>
@@ -26,10 +26,10 @@
       <li onclick="burgerDissapear()">EXIT</li>
     </ul>
   </div>
-<!--...........HAMBURGER MENU.............-->
+  <!--...........HAMBURGER MENU.............-->
 
 
-  <div class="container"> 
+  <div class="container">
     <!--...........NAV BAR....................-->
     <nav class="navbar navbar-fixed-top">
       <div class="container-fluid">
@@ -38,7 +38,7 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul id="petNav">
-            <li><img height="35px" src="assets/images/call.png"></li>
+            <li><img onmouseover="callUs()" onmouseout="callUsRemove()" id="shlushalka" height="35px" src="assets/images/call.png"><span id="hoverSpan">ОБАДЕТЕ НИ СЕ</span><span id="hoverSpanAfter"></span></li>          
             <li><a>070012525</a></li>
             <li><a>BG</a></li>
             <li>|</li>
@@ -63,11 +63,11 @@
           <img src="assets/images/basket.png">
         </div>
         <span id="orderCounter">&nbsp;5&nbsp;</span>
-      </div>
+        </div>
 
-      <!--.........MOBILE MENU..............-->
+        <!--.........MOBILE MENU..............-->
     </nav>
-<!--.........Carousel..............-->
+    <!--.........Carousel..............-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -80,20 +80,21 @@
           </div>
         </div>
         <div class="item">
-          <img  src="assets/images/406_bg_banner.jpg" width="100%" height="100%" />
+          <img src="assets/images/406_bg_banner.jpg" width="100%" height="100%" />
           <div class="carousel-caption">
           </div>
         </div>
       </div>
     </div>
-  </div>
-<!--.........Carousel..............-->
+    </div>
+    <!--.........Carousel..............-->
 
 
 
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.js"></script>
-  <script src="assets/js/HamburgerBtn.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/HamburgerBtn.js"></script>
+    <script src="assets/js/callUs.js"></script>
 </body>
 
 </html>
