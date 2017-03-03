@@ -19,6 +19,7 @@
     padding: 0;
 }
 
+
 /*NAV BAR STYLE*/
 
 div.container-fluid {
@@ -37,11 +38,13 @@ div.container-fluid {
         font-size: 12px;
     }
 }
+
 @media all and (max-width:999px) {
     div.container-fluid {
         width: 900px;
     }
 }
+
 @media all and (max-width:899px) {
     div.container-fluid {
         display: none;
@@ -88,7 +91,125 @@ div.container-fluid {
     bottom: 10px;
 }
 
+#nav-mobile {
+    display: none;
+}
+
+@media all and (max-width:898px) {
+    div#nav-mobile {
+        display: inline-block;
+    }
+    div#nav-mobile div {
+        display: inline;
+    }
+    div#nav-mobile img {
+        height: 65px;
+    }
+    div#nav-mobile div:nth-child(1) {
+        width: 33%;
+        padding-left: 1em;
+    }
+    div#nav-mobile div:nth-child(2) {
+        width: 33%;
+        padding-left: 15em;
+    }
+    div#nav-mobile div:nth-child(3) {
+        width: 33%;
+        padding-left: 15em;
+    }
+}
+
+@media all and (max-width:820px) {
+    div#nav-mobile img {
+        height: 65px;
+    }
+    div#nav-mobile div:nth-child(1) {
+        width: 33%;
+        padding-left: 1em;
+    }
+    div#nav-mobile div:nth-child(2) {
+        width: 33%;
+        padding-left: 13em;
+    }
+    div#nav-mobile div:nth-child(3) {
+        width: 33%;
+        padding-left: 13em;
+    }
+}
+@media all and (max-width:780px) {
+    div#nav-mobile img {
+        height: 65px;
+    }
+    div#nav-mobile div:nth-child(1) {
+        width: 33%;
+        padding-left: 1em;
+    }
+    div#nav-mobile div:nth-child(2) {
+        width: 33%;
+        padding-left: 11em;
+    }
+    div#nav-mobile div:nth-child(3) {
+        width: 33%;
+        padding-left: 11em;
+    }
+}
+@media all and (max-width:720px) {
+    div#nav-mobile img {
+        height: 65px;
+    }
+    div#nav-mobile div:nth-child(1) {
+        width: 33%;
+        padding-left: 1em;
+    }
+    div#nav-mobile div:nth-child(2) {
+        width: 33%;
+        padding-left: 8em;
+    }
+    div#nav-mobile div:nth-child(3) {
+        width: 33%;
+        padding-left: 8em;
+    }
+}
+
+@media all and (max-width:620px) {
+    div#nav-mobile img {
+        height: 65px;
+    }
+    div#nav-mobile div:nth-child(1) {
+        width: 33%;
+        padding-left: 1em;
+    }
+    div#nav-mobile div:nth-child(2) {
+        width: 33%;
+        padding-left: 6em;
+    }
+    div#nav-mobile div:nth-child(3) {
+        width: 33%;
+        padding-left: 6em;
+    }
+}
+
+@media all and (max-width:568px) {
+    div#nav-mobile img {
+        height: 50px;
+    }
+    div#nav-mobile div:nth-child(1) {
+        width: 33%;
+        padding-left: 1em;
+    }
+    div#nav-mobile div:nth-child(2) {
+        width: 33%;
+        padding-left: 6em;
+    }
+    div#nav-mobile div:nth-child(3) {
+        width: 33%;
+        padding-left: 6em;
+    }
+}
+
+
 /*<span id="hoverSpan" >ОБАДЕТЕ НИ СЕ<span>*/
+
 
 /*#hoverSpan {
     position: relative;
