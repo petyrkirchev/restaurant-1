@@ -117,11 +117,25 @@ div.container-fluid {
         width: 33%;
         padding-left: 15em;
     }
+    #orderCounter{
+        width: 20px;
+        height: 20px;
+        position: relative;
+        right: 15px;
+        bottom: 9px;
+        color: white;
+        text-align: center;
+        font-size:15px;
+        font-weight: 500;
+        border: 2px solid white;
+        border-radius: 100em;
+        background-color: darkgreen;
+    }
 }
-
 @media all and (max-width:820px) {
     div#nav-mobile img {
         height: 65px;
+        
     }
     div#nav-mobile div:nth-child(1) {
         width: 33%;
@@ -133,7 +147,7 @@ div.container-fluid {
     }
     div#nav-mobile div:nth-child(3) {
         width: 33%;
-        padding-left: 13em;
+        padding-left: 12em;
     }
 }
 @media all and (max-width:768px) {
@@ -221,7 +235,7 @@ div.container-fluid {
         padding-left: 5em;
     }
 }
-@media all and (max-width:420px) {
+@media all and (max-width:430px) {
     div#nav-mobile img {
         height: 42px;
     }
@@ -248,7 +262,7 @@ div.container-fluid {
     }
     div#nav-mobile div:nth-child(2) {
         width: 33%;
-        padding-left: 3em;
+        padding-left: 2.5em;
     }
     div#nav-mobile div:nth-child(3) {
         width: 33%;
@@ -256,6 +270,11 @@ div.container-fluid {
     }
 }
 @media all and (max-width:360px) {
+         #orderCounter{
+        right: 15px;
+        bottom: 6px;
+        font-size:12px;
+    }
     div#nav-mobile img {
         height: 38px;
     }
@@ -265,7 +284,7 @@ div.container-fluid {
     }
     div#nav-mobile div:nth-child(2) {
         width: 33%;
-        padding-left: 3m;
+        padding-left: 3em;
     }
     div#nav-mobile div:nth-child(3) {
         width: 33%;
@@ -273,6 +292,11 @@ div.container-fluid {
     }
 }
 @media all and (max-width:320px) {
+     #orderCounter{
+        right: 17px;
+        bottom: 5px;
+        font-size:12px;
+    }
     div#nav-mobile img {
         height: 35px;
     }
@@ -289,6 +313,23 @@ div.container-fluid {
         padding-left: 2.5em;
     }
 }
+
+#appearMenu{
+    position: fixed;
+    height: 100%;
+    background: white;
+    z-index: 9999;
+}
+#appearMenu ul{
+    list-style-type: none;
+    padding: 0 20px;
+}
+#appearMenu ul li{
+    border-bottom: 1px solid #0d6490;
+    width: 100%;
+    line-height: 45px;
+}
+
 
 /*<span id="hoverSpan" >ОБАДЕТЕ НИ СЕ<span>*/
 
