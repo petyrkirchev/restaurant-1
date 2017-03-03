@@ -23,12 +23,13 @@
       <li>РЕСТОРАНТИ</li>
       <li>АЛЕРГЕНИ</li>
       <li><a>BG</a>|<a>EN</a></li>
+      <li onclick="burgerDissapear()">EXIT</li>
     </ul>
   </div>
 <!--...........HAMBURGER MENU.............-->
 
-  <div class="container">
 
+  <div class="container"> 
     <!--...........NAV BAR....................-->
     <nav class="navbar navbar-fixed-top">
       <div class="container-fluid">
@@ -53,7 +54,7 @@
 
       <div id="nav-mobile">
         <div  id="burger">
-          <img src="assets/images/menuBtn.png">
+          <img onclick="burgerAppear()" src="assets/images/menuBtn.png">
         </div>
         <div>
           <a href="tested.html"><img src="assets/images/DominosLogo.png"></a>    
@@ -92,6 +93,7 @@
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/HamburgerBtn.js"></script>
 </body>
 
 </html>
