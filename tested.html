@@ -29,22 +29,23 @@
   <!--...........HAMBURGER MENU.............-->
 
 
-  <div class="container">
+  <div class="container" id="containerTest">
     <!--...........NAV BAR....................-->
-    <nav class="navbar navbar-fixed-top">
+    <nav id="navChangeBG" onmousewheel="changeOnWheelBG()" class="navbar navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img height="60px" src="assets/images/DominosLogo.png"></a>
+          <a class="navbar-brand" href="#"><img id="logoDominos" height="60px" src="assets/images/DominosLogo.png"></a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul id="petNav">
-            <li><img onmouseover="callUs()" onmouseout="callUsRemove()" id="shlushalka" height="35px" src="assets/images/call.png"><span id="hoverSpan">ОБАДЕТЕ НИ СЕ</span><span id="hoverSpanAfter"></span></li>          
-            <li><a>070012525</a></li>
-            <li><a>BG</a></li>
+            <li><img onmouseover="callUs()" onmouseout="callUsRemove()" id="slushalka" height="35px" src="assets/images/call.png">
+              <span id="hoverSpan">ОБАДЕТЕ НИ СЕ</span><span id="hoverSpanAfter"></span></li>
+            <li><a id="petNav1" href="#">070012525</a></li>
+            <li><a id="petNav2" href="#">BG</a></li>
             <li>|</li>
-            <li><a>EN</a></li>
-            <li><a>МЕНЮ</a></li>
-            <li><a class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
+            <li><a id="petNav3" href="#">EN</a></li>
+            <li><a id="petNav4" href="#">МЕНЮ</a></li>
+            <li><a href="#" class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
           </ul>
         </div>
       </div>
@@ -53,19 +54,19 @@
       <!--............MOBILE MENU............-->
 
       <div id="nav-mobile">
-        <div  id="burger">
+        <div id="burger">
           <img onclick="burgerAppear()" src="assets/images/menuBtn.png">
         </div>
         <div>
-          <a href="tested.html"><img src="assets/images/DominosLogo.png"></a>    
+          <a href="tested.html"><img src="assets/images/DominosLogo.png"></a>
         </div>
         <div id="basket">
           <img src="assets/images/basket.png">
         </div>
         <span id="orderCounter">&nbsp;5&nbsp;</span>
-        </div>
+      </div>
 
-        <!--.........MOBILE MENU..............-->
+      <!--.........MOBILE MENU..............-->
     </nav>
     <!--.........Carousel..............-->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -86,15 +87,22 @@
         </div>
       </div>
     </div>
-    </div>
-    <!--.........Carousel..............-->
-
-
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/HamburgerBtn.js"></script>
-    <script src="assets/js/callUs.js"></script>
+  </div>
+  <!--.........Carousel..............-->
+  <div>
+    <aside></aside>
+    <section style="font-size: 40px">
+      <article>Eto text</article>
+      <article>Eto text</article>
+      <article>Eto text</article>
+      <article>Eto text</article>
+      <article>Eto text</article>
+    </section>
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/HamburgerBtn.js"></script>
+  <script src="assets/js/callUs.js"></script>
 </body>
 
 </html>
