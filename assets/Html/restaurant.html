@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/restaurant.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container" id="containerTest">
+        <!--...........NAV BAR....................-->
+        <nav id="navChangeBG" class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img id="logoDominos" height="60px" src="../images/DominosLogoBlue.png"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul id="petNav">
+                        <li><img onmouseover="callUs()" onmouseout="callUsRemove()" id="slushalka" height="35px" src="../images/callGrey.png">
+                            <span id="hoverSpan">ОБАДЕТЕ НИ СЕ</span><span id="hoverSpanAfter"></span></li>
+                        <li><a id="petNav1" class="banner" href="#">070012525</a></li>
+                        <li><a id="petNav2" class="banner" href="#">BG</a></li>
+                        <li>|</li>
+                        <li><a id="petNav3" class="banner" href="#">EN</a></li>
+                        <li><a id="petNav4" class="banner" href="#">МЕНЮ</a></li>
+                        <li><a href="#" class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--........NAV BAR.........-->
+
+            <!--............MOBILE MENU............-->
+
+            <div id="nav-mobile">
+                <div id="burger">
+                    <img id="burger1" onclick="burgerAppear()" src="../images/menuBtnGrey.png">
+                </div>
+                <div>
+                    <a href="tested.html"><img id="logoDominos1" src="../images/DominosLogoBlue.png"></a>
+                </div>
+                <div id="basket">
+                    <img id="basket1" src="../images/basketGrey.png">
+                </div>
+                <span id="orderCounter">&nbsp;5&nbsp;</span>
+            </div>
+
+            <!--.........MOBILE MENU..............-->
+        </nav>
+    </div>
+    <div id="maincont">
+        <div id="navMenuContainer">
+            <p class="navMenu">DEALS</p>
+            <p class="navMenu">ПИЦА</p>
+            <p class="navMenu">ПРЕДЯСТИЯ</p>
+            <p class="navMenu">ПИЛЕ</p>
+            <p class="navMenu">ПАСТА</p>
+            <p class="navMenu">САЛАТИ</p>
+            <p class="navMenu">САНДВИЧИ</p>
+            <p class="navMenu">СОС</p>
+            <p class="navMenu">ДЕСЕРТИ</p>
+            <p class="navMenu">НАПИТКИ</p>
+        </div>
+        <div>
+            </div>
+    </div>
+    <script src="../js/callUs.js"></script>
+</body>
+
+</html>
