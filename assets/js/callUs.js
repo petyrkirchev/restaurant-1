@@ -30,6 +30,7 @@ function changeOnWheelBG() {
     var basket = document.getElementById("basket1");
     if (event.wheelDelta <= -120) {
         element.style.background = "white";
+        element.style.boxShadow="2px 2px 1px #555555";
         logo.src = "assets/images/DominosLogoBlue.png"
         slushalka.src = "assets/images/callGrey.png"
         p.style.color = "#808080";
@@ -54,5 +55,6 @@ function changeOnWheelBG() {
         basket.src = "assets/images/basket.png";
         logo1.src = "assets/images/DominosLogo.png";
         element.style.background = "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 24%, rgba(0, 0, 0, 0.35) 65%, rgba(0, 0, 0, 0.15) 85%, rgba(0, 0, 0, 0.05) 100%)";
+        element.style.boxShadow="none";
     }
 }
