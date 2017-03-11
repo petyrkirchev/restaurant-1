@@ -44,6 +44,7 @@ div.container-fluid {
 @media screen and (max-width:1025px) {
     div.container-fluid {
         width: 900px;
+        height: 85px;
     }
     #petNav{
         position: absolute;
@@ -699,20 +700,27 @@ div.customDiv button{
 #stpBtn{
     border-left: 3px solid #808080;
 }
+#main{
+    margin: 0 auto;
+    width: 1270px;
+}
 
 section,aside{
     height: 800px;
+        color:white;
     display: inline-block;
     box-sizing: border-box;
 }
 section{
-    width: 50%;
+    width: 54%;
 }
 aside{
+    text-align: center;
     float: right;
     border-radius: 0.5em;
-    width: 40%;
+    width: 36%;
     margin: 1% 5%;
+    padding: .5em 0;
     background-color:#323232; 
 }
 .box{
@@ -722,27 +730,94 @@ aside{
     margin: 2% 5%;
     border-radius: 0.5em;
     height: 32%;
-    color:white;
+
 }
-.box p{
+.box p,aside p{
     color: white;
     font-size: 1.4em;
     font-weight: 400;
 }
-.box h3{
-    font-weight: bold;
-    border-left-width: 30px;
-    border-inline-start: url('../images/decor_elem_left_white.svg');
-    border-right-width: 30px;
-    border-inline-end: url('../images/decor_elem_right_white.svg');
+aside p{
+    padding: 0 15%;
 }
-
+.box h3,aside h3{
+    line-height: 50px;
+    font-weight: bold;
+}
+.box:nth-child(2) h3{
+    font-size:20px;
+}
+.box h3 img:first-child,aside h3 img:first-child{
+    float: left;
+}
+.box h3 img:nth-child(2),aside h3 img:nth-child(2){
+    float: right;
+}
+aside div img{
+    height: 5em;
+    padding: 0 4em;
+}
+aside span {
+    color:white;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+aside div:last-child img{
+    height: 35em;
+    margin-top: 4.4em;
+}
 .box-red-order{
     background-color: #db092e; 
+}
+.box-red-order button{
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 0px;
+    height: 3.5em;
+    width: 80%;
+    border-radius: 0.35em;
+    border: none; 
+    background-color: #000000; 
 }
 .box-blue-email{
     background-color: #0d6490; 
 }
+.box-blue-email form{
+    vertical-align: middle;
+    display: inline-block;
+    width: 80%;
+}
+.box-blue-email form button{
+    border: none;
+    background-color:#0d6490; 
+}
+.box-blue-email form input{
+    color: #404040;
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 40px;
+    border: none;
+    border-radius: 0.35em;
+    width: 88%;
+}
+.box-blue-email form img{
+    margin-top: -5px;
+    width: 45px;
+}
 .box-skyblue-skype{
-    background-color: #5ba0c3; 
+    background-color: #00a2e1; 
+}
+.box-skyblue-skype button{
+    vertical-align: middle;
+    border: none;
+    background-color: #00a2e1; 
+}
+.box-skyblue-skype img{
+    width: 50px;
+}
+.box-skyblue-skype span{
+    position: relative;
+    top:7px;
+    left: 7px;
+    font-size: 32px;
 }
