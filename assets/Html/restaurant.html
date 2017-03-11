@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="stylesheet" type="text/css" href="../css/normalise.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/restaurant.css">
 
@@ -13,12 +14,28 @@
 </head>
 
 <body>
-    <div class="container" id="containerTest">
-        <!--...........NAV BAR....................-->
+    <!--................. HAMBURGER MENU...............-->
+    <div id="appearMenu">
+        <ul>
+            <li>ОБАДЕТЕ НИ СЕ <img height="30px" src="../images/callBlue.png"></li>
+            <li>МЕНЮ</li>
+            <li><a class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
+            <li>СВЪРЖЕТЕ СЕ С НАС</li>
+            <li>УСЛОВИЯ за ПОЛЗВАНЕ</li>
+            <li>РЕСТОРАНТИ</li>
+            <li>АЛЕРГЕНИ</li>
+            <li><a>BG</a>|<a>EN</a></li>
+            <li onclick="burgerDissapear()">EXIT</li>
+        </ul>
+    </div>
+    <!--...........HAMBURGER MENU.............-->
+
+    <!--...........NAV BAR....................-->
+    <div class="container">
         <nav id="navChangeBG" class="navbar navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img id="logoDominos" height="60px" src="../images/DominosLogoBlue.png"></a>
+                    <a class="navbar-brand" href="../../tested.html"><img id="logoDominos" height="60px" src="../images/DominosLogoBlue.png"></a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul id="petNav">
@@ -53,6 +70,7 @@
             <!--.........MOBILE MENU..............-->
         </nav>
     </div>
+    <!--NAVIGATION-->
     <div id="maincont">
         <div id="navMenuContainer">
             <p class="navMenu">DEALS</p>
@@ -66,10 +84,14 @@
             <p class="navMenu">ДЕСЕРТИ</p>
             <p class="navMenu">НАПИТКИ</p>
         </div>
+        <!--NAVIGATION-->
         <div>
-            </div>
+        </div>
     </div>
     <script src="../js/callUs.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/HamburgerBtn.js"></script>
 </body>
 
 </html>
