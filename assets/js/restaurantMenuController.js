@@ -20,7 +20,7 @@ for (var index = 0; index < menuDishes.length; index++) {
             div.appendChild(desc);
             div.style.cssText = "float: left; boxSizing: border-box; width: 18%; border-radius: 10px; background-color: white; margin: 1em";
             img.src = dishArray[dish].img;
-            img.style.cssText = "display: block; width: 100%; height: auto; border-radius: 10px";
+            img.style.cssText = "display: block; width: 100%; height: auto; border-top-left-radius: 10px; border-top-right-radius: 10px";
             name.textContent = dishArray[dish].name;
             desc.textContent = dishArray[dish].desc;
         }
