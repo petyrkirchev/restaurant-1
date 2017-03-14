@@ -472,3 +472,9 @@ div.container-fluid {
 body {
     background-image: url("../images/background.jpg");
 }
+
+#activeMenu {
+    width: 1170px;
+    margin: auto;
+    text-align: center;
+}
