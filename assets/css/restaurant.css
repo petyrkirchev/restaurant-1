@@ -465,9 +465,6 @@ div.container-fluid {
 
 
 }
-.navMenu:hover {
-     border: 3px white solid;
-}
 
 body {
     background-image: url("../images/background.jpg");
@@ -477,4 +474,20 @@ body {
     width: 1170px;
     margin: auto;
     text-align: center;
+}
+
+.imena {
+    font-size: 1em;
+    color: #0073aa;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.desc {
+    font-size: 1em;
+    color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    opacity: 0.5;
+    font-style: italic;
 }
