@@ -2,39 +2,197 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width = device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width = device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>Momino's pizza</title>
 </head>
 
 <body>
-    
-<nav class="navbar navbar-inverse navbar-fixed-top">
- <div class="container">
-       <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img src="assets/images/DominosLogo.png"></a>
-        </div>
-      <ul class="nav navbar-nav">
-          <li>
-            <a href="#"><img src="assets/images/call.png"></a>
-          </li>
-          <li><a class="btn btn-link btn-lg" href="#">070012525</a></li>
-          <li><a href="#">BG </a></li>
-          <li>|</li>
-          <li><a href="#">EN</a></li>
-          <li><a href="#">МЕНЮ</a></li>
-          <li><button class="btn btn-lg btn-success" href="#">ПОРЪЧАЙ СЕГА</button></li>
-        </ul>
- </div>
-</nav>
+  <!--................. HAMBURGER MENU...............-->
+  <div id="appearMenu">
+    <ul>
+      <li>ОБАДЕТЕ НИ СЕ <img height="30px" src="assets/images/callBlue.png"></li>
+      <li>МЕНЮ</li>
+      <li><a class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
+      <li>СВЪРЖЕТЕ СЕ С НАС</li>
+      <li>УСЛОВИЯ за ПОЛЗВАНЕ</li>
+      <li>РЕСТОРАНТИ</li>
+      <li>АЛЕРГЕНИ</li>
+      <li><a>BG</a>|<a>EN</a></li>
+      <li onclick="burgerDissapear()">EXIT</li>
+    </ul>
+  </div>
+  <!--...........HAMBURGER MENU.............-->
 
-  
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/bootstrap.js"></script>
+
+  <div class="container" id="containerTest">
+    <!--...........NAV BAR....................-->
+    <nav id="navChangeBG" onmousewheel="changeOnWheelBG()" class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img id="logoDominos" height="60px" src="assets/images/DominosLogo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul id="petNav">
+            <li><img onmouseover="callUs()" onmouseout="callUsRemove()" id="slushalka" height="35px" src="assets/images/call.png">
+              <span id="hoverSpan">ОБАДЕТЕ НИ СЕ</span><span id="hoverSpanAfter"></span></li>
+            <li><a id="petNav1" href="#">070012525</a></li>
+            <li><a id="petNav2" href="#">BG</a></li>
+            <li>|</li>
+            <li><a id="petNav3" href="#">EN</a></li>
+            <li><a id="petNav4" href="https://www.dominos.bg/menu/sofia-pavlovo">МЕНЮ</a></li>
+            <li><a href="#" class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--........NAV BAR.........-->
+
+      <!--............MOBILE MENU............-->
+
+      <div id="nav-mobile">
+        <div id="burger">
+          <img id="burger1" onclick="burgerAppear()" src="assets/images/menuBtn.png">
+        </div>
+        <div>
+          <a href="tested.html"><img id="logoDominos1" src="assets/images/DominosLogo.png"></a>
+        </div>
+        <div id="basket">
+          <img id="basket1" src="assets/images/basket.png">
+        </div>
+        <span id="orderCounter">&nbsp;5&nbsp;</span>
+      </div>
+
+      <!--.........MOBILE MENU..............-->
+    </nav>
+    <!--.........Carousel..............-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="assets/images/416_bg_banner.jpg" width="100%" height="100%" />
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/images/406_bg_banner.jpg" width="100%" height="100%" />
+          <div class="carousel-caption">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--.........Carousel..............-->
+  <div class="container">
+    <div class="articlesContainer">
+      <article class="articles">
+        <img src="assets/images/deal1.png">
+        <img src="assets/images/offer_ribbon_bg.svg">
+        <h3>ВСЯКА ВТОРА ПИЦА НА ПОЛОВИМ ЦЕНА!</h4>
+          <hr>
+          <p>За всяка пица, взета на място, получавате втора на половин цена!</p>
+          <div class="articleFooter">
+            <a class="btn btn-lg btn-success">ВЗЕМИ ТАЗИ ОФЕРТА!</a>
+            <hr>
+            <div class="customDiv">
+              <button>
+                <img style="width: 1.5em; height: 1.5em;" src="assets/images/carry_out_store.svg">
+                <span>CARRY OUT</span>
+              </button>
+            </div>
+
+          </div>
+      </article>
+      <article class="articles">
+        <img src="assets/images/deal2.png">
+        <img src="assets/images/offer_ribbon_bg.svg">
+        <h3>СЕМЕЙНО КОМБО</h4>
+          <hr>
+          <p>2 големи пици + Чоко пай + Кока-Кола 1.25л - само за 23.70лв. *Не важи за тесто с Philadelphia и категория „За
+            ценители“
+          </p>
+          <div class="articleFooter">
+            <a class="btn btn-lg btn-success">ВЗЕМИ ТАЗИ ОФЕРТА!</a>
+            <hr>
+            <div class="customDiv">
+              <button> <img style="width: 1.5em; height: 1.5em;" src="assets/images/delivery_bike.svg"><span>ДОСТАВКА</span></button>
+              <button id="stpBtn"> <img style="width: 1.5em; height: 1.5em;" src="assets/images/carry_out_store.svg"><span>CARRY OUT</span></button>
+            </div>
+          </div>
+      </article>
+    </div>
+  </div>
+  <div class="container">
+    <div id="main">
+      <section>
+        <div class="box box-red-order">
+          <!--<img style="width: 50px" src="assets/images/decor_elem_left_white.svg" />
+        <img style="width: 50px" src="assets/images/decor_elem_right_white.svg" />-->
+          <h3><img style="width: 50px" src="assets/images/decor_elem_left_white.svg" />PIZZA TRACKER<img style="width: 50px"
+              src="assets/images/decor_elem_right_white.svg" /></h3>
+          <p>Следете поръчката си с нашия уникален Pizza Tracker!</p>
+          <button>ПРОСЛЕДЕТЕ ПОРЪЧКАТА СИ СЕГА!</button>
+        </div>
+        <div class="box box-blue-email">
+          <h3><img style="width: 50px" src="assets/images/decor_elem_left_white.svg" />АБОНИРАЙТЕ СЕ ЗА НАШИЯ NEWSLETTER<img
+              style="width: 50px" src="assets/images/decor_elem_right_white.svg" /></h3>
+          <p>Абонирайте се за нашия newsletter и първи научавайте за горещите ни оферти!</p>
+          <form>
+            <input type="email" placeholder="myemail@example.com">
+            <button type="submit"><img  src="assets/images/green_check.png"></button>
+          </form>
+        </div>
+        <div class="box box-skyblue-skype">
+          <h3><img style="width: 50px" src="assets/images/decor_elem_left_white.svg" />ПОРЪЧАЙТЕ ПРЕЗ SKYPE<img style="width: 50px"
+              src="assets/images/decor_elem_right_white.svg" /></h3>
+          <p>Поръчайте като ни се обадите през Skype!</p>
+          <button>
+                <img src="assets/images/skype.png">
+                <span>Call</span>
+        </button>
+        </div>
+      </section>
+
+      <aside>
+        <h3><img style="width: 50px" src="assets/images/decor_elem_left_white.svg" />DOMINO'S PIZZA APP<img style="width: 50px"
+            src="assets/images/decor_elem_right_white.svg" /></h3>
+        <p>Поръчайте онлайн чрез безплатното ни приложение. Свалете сега тук!</p>
+        <div>
+          <img src="assets/images/Apple.png"><span>&amp;</span><img src="assets/images/Android.png">
+        </div>
+        <div><img src="assets/images/iphone_6.png"></div>
+      </aside>
+    </div>
+  </div>
+  <footer>
+    <ul>
+      <li><button>МЕНЮ</button></li>
+      <li><button>РЕСТОРАНТИ</button></li>
+      <li><button>СВЪРЖЕТЕ СЕ С НАС</button></li>
+      <li><button>УСЛОВИЯ ЗА ПОЛЗВАНЕ</button></li>
+      <li><button>АЛЕРГЕНИ</button></li>
+      <li><button>КАНДИДАТСТВАНЕ ЗА РАБОТА</button></li>
+    </ul>
+    <ul>
+      <li><button><img src="assets/images/070012525.png"></button></li>
+      <li><button><img src="assets/images/facebook.png"></button></li>
+      <li><button><img src="assets/images/twitter.png"></button></li>
+      <li><button><img src="assets/images/instagram.png"></button></li>
+      <li><button><img src="assets/images/googleplus.png"></button></li>
+      <li><button><img src="assets/images/youtube.png"></button></li>
+    </ul>
+    <div>&copy; 2017 Domino's Pizza. All Rights Reserved</div>
+  </footer>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/HamburgerBtn.js"></script>
+  <script src="assets/js/callUs.js"></script>
 </body>
 
 </html>
