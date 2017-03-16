@@ -29,8 +29,8 @@ function changeOnWheelBG() {
     var burger = document.getElementById("burger1");
     var logo1 = document.getElementById("logoDominos1");
     var basket = document.getElementById("basket1");
-    if (document.body.scrollTop>0) {
-
+    if (document.body.scrollTop>0 && event.clientY>0) {
+        console.log(event.pageY);
         console.log(document.body.scrollTop);
         console.log(event.deltaY);
         element.style.background = "white";
@@ -47,8 +47,7 @@ function changeOnWheelBG() {
         basket.src = "assets/images/basketGrey.png";
         logo1.src = "assets/images/DominosLogoBlue.png";
     }
-    if (document.body.scrollTop == 0 && document.body.scrollTop <= 20 ) {
-
+    if (document.body.scrollTop == 0) {
         logo.src = "assets/images/DominosLogo.png"
         slushalka.src = "assets/images/call.png"
         p.style.color = "#ffffff";
