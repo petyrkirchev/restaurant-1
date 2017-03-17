@@ -38,7 +38,7 @@
                 div.appendChild(but);
                 // div2.style.width = "17%";
                 // div2.style.height= "300px";
-                div.style.cssText = "float: left; boxSizing: border-box; width: 17%; height: 410px; border-radius: 10px; background-color: white; margin: 1em";
+                div.style.cssText = "float: left; boxSizing: border-box; width: 17%; height: 420px; border-radius: 10px; background-color: white; margin: 1em";
                 img.src = dishArray[dish].img;
                 img.style.cssText = "display: block; width: 100%; height: 180px; border-top-left-radius: 10px; border-top-right-radius: 10px";
                 name.textContent = dishArray[dish].name;

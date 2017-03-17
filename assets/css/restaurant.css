@@ -40,7 +40,7 @@ div.container-fluid {
     margin-top: 45px;
     list-style: none;
     display: inline-flex;
-    float: right;
+    float: left;
 }
 
 #petNav img {
@@ -95,14 +95,9 @@ div.container-fluid {
         padding-left: 15em;
     }
     #orderCounter{
-        width: 20px;
-        height: 20px;
-        position: relative;
-        right: 15px;
-        bottom: 9px;
         color: white;
         text-align: center;
-        font-size:15px;
+        font-size:1em;
         font-weight: 500;
         border: 2px solid white;
         border-radius: 100em;
@@ -491,7 +486,7 @@ body {
     font-weight: 700;
     opacity: 0.5;
     font-style: italic;
-    min-height: 120px;
+    min-height: 130px;
     padding: 3px;
 }
 
@@ -505,4 +500,28 @@ hr {
 .customBtn {
     margin-top: 5px;
 
+}
+#basketWrapper{
+    width: 100px;
+    position: relative;
+        float: right;
+}
+#orderCounter2 {
+    position: absolute;
+    top: 21px;
+    left: 40px;
+    width: 20px;
+    height: 22px;
+    color: white;
+    text-align: center;
+    font-size:1em;
+    font-weight: 500;
+    border: 2px solid white;
+    border-radius: 100em;
+    background-color: darkgreen;
+}
+#basket2{
+
+    width: 100px;
+    height: 100px;
 }
