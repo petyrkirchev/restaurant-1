@@ -1,10 +1,9 @@
-var allElements = document.getElementById("all");
-var zagruska = document.getElementById("zagruska");
-document.body.addEventListener("load", function (event) {
-    allElements.style.display = "none";
-
-    setTimeout(function () {
-        zagruska.style.display="none";
+ document.addEventListener("DOMContentLoaded", function (event) {
+      console.log("DOM fully loaded and parsed");
+      var allElements = document.getElementById("allF");
+      var zagruska = document.getElementById("zagruska");
+      setTimeout(function () {
+        zagruska.style.display = "none";
         allElements.style.display = "block";
-    }, 2500);
-}, true);
+      }, 2500);
+    });

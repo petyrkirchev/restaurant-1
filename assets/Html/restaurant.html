@@ -9,95 +9,98 @@
     <link rel="stylesheet" type="text/css" href="../css/normalise.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/restaurant.css">
-
+    <link rel="stylesheet" type="text/css" href="../css/restaurant.css">
     <title>Document</title>
 </head>
 
 <body>
-    <!--................. HAMBURGER MENU...............-->
-    <div id="appearMenu">
-        <ul>
-            <li>ОБАДЕТЕ НИ СЕ <img height="30px" src="../images/callBlue.png"></li>
-            <li>МЕНЮ</li>
-            <li><a class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
-            <li>СВЪРЖЕТЕ СЕ С НАС</li>
-            <li>УСЛОВИЯ за ПОЛЗВАНЕ</li>
-            <li>РЕСТОРАНТИ</li>
-            <li>АЛЕРГЕНИ</li>
-            <li><a>BG</a>|<a>EN</a></li>
-            <li onclick="burgerDissapear()">EXIT</li>
-        </ul>
-    </div>
-    <!--...........HAMBURGER MENU.............-->
+    <div id="zagruska"><img src="../images/zagruska.gif"></div>
+    <div id="allF" style="display: none">
+        <!--................. HAMBURGER MENU...............-->
+        <div id="appearMenu">
+            <ul>
+                <li>ОБАДЕТЕ НИ СЕ <img height="30px" src="../images/callBlue.png"></li>
+                <li>МЕНЮ</li>
+                <li><a class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
+                <li>СВЪРЖЕТЕ СЕ С НАС</li>
+                <li>УСЛОВИЯ за ПОЛЗВАНЕ</li>
+                <li>РЕСТОРАНТИ</li>
+                <li>АЛЕРГЕНИ</li>
+                <li><a>BG</a>|<a>EN</a></li>
+                <li onclick="burgerDissapear()">EXIT</li>
+            </ul>
+        </div>
+        <!--...........HAMBURGER MENU.............-->
 
-    <!--...........NAV BAR....................-->
-    <div class="container">
-        <nav id="navChangeBG" class="navbar navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="../../tested.html"><img id="logoDominos" height="60px" src="../images/DominosLogoBlue.png"></a>
+        <!--...........NAV BAR....................-->
+        <div class="container">
+            <nav id="navChangeBG" class="navbar navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../../index.html"><img id="logoDominos" height="60px" src="../images/DominosLogoBlue.png"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul id="petNav">
+                            <li><img onmouseover="callUs()" onmouseout="callUsRemove()" id="slushalka" height="35px" src="../images/callGrey.png">
+                                <span id="hoverSpan">ОБАДЕТЕ НИ СЕ</span><span id="hoverSpanAfter"></span></li>
+                            <li><a id="petNav1" class="banner" href="#">070012525</a></li>
+                            <li><a id="petNav2" class="banner" href="#">BG</a></li>
+                            <li>|</li>
+                            <li><a id="petNav3" class="banner" href="#">EN</a></li>
+                            <li><a id="petNav4" class="banner" href="#">МЕНЮ</a></li>
+                            <li><a href="#" class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul id="petNav">
-                        <li><img onmouseover="callUs()" onmouseout="callUsRemove()" id="slushalka" height="35px" src="../images/callGrey.png">
-                            <span id="hoverSpan">ОБАДЕТЕ НИ СЕ</span><span id="hoverSpanAfter"></span></li>
-                        <li><a id="petNav1" class="banner" href="#">070012525</a></li>
-                        <li><a id="petNav2" class="banner" href="#">BG</a></li>
-                        <li>|</li>
-                        <li><a id="petNav3" class="banner" href="#">EN</a></li>
-                        <li><a id="petNav4" class="banner" href="#">МЕНЮ</a></li>
-                        <li><a href="#" class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--........NAV BAR.........-->
+                <!--........NAV BAR.........-->
 
-            <!--............MOBILE MENU............-->
+                <!--............MOBILE MENU............-->
 
-            <div id="nav-mobile">
-                <div id="burger">
-                    <img id="burger1" onclick="burgerAppear()" src="../images/menuBtnGrey.png">
+                <div id="nav-mobile">
+                    <div id="burger">
+                        <img id="burger1" onclick="burgerAppear()" src="../images/menuBtnGrey.png">
+                    </div>
+                    <div>
+                        <a href="tested.html"><img id="logoDominos1" src="../images/DominosLogoBlue.png"></a>
+                    </div>
+                    <div id="basket">
+                        <img id="basket1" src="../images/basketGrey.png">
+                    </div>
+                    <span id="orderCounter">&nbsp;5&nbsp;</span>
                 </div>
-                <div>
-                    <a href="tested.html"><img id="logoDominos1" src="../images/DominosLogoBlue.png"></a>
-                </div>
-                <div id="basket">
-                    <img id="basket1" src="../images/basketGrey.png">
-                </div>
-                <span id="orderCounter">&nbsp;5&nbsp;</span>
-            </div>
 
-            <!--.........MOBILE MENU..............-->
-        </nav>
-    </div>
-    <!--NAVIGATION-->
-    <div id="maincont">
-        <div id="navMenuContainer">
-            <p class="navMenu">DEALS</p>
-            <p class="navMenu">ПИЦА</p>
-            <p class="navMenu">ПРЕДЯСТИЯ</p>
-            <p class="navMenu">ПИЛЕ</p>
-            <p class="navMenu">ПАСТА</p>
-            <p class="navMenu">САЛАТИ</p>
-            <p class="navMenu">САНДВИЧИ</p>
-            <p class="navMenu">СОС</p>
-            <p class="navMenu">ДЕСЕРТИ</p>
-            <p class="navMenu">НАПИТКИ</p>
+                <!--.........MOBILE MENU..............-->
+            </nav>
         </div>
         <!--NAVIGATION-->
+        <div id="maincont">
+            <div id="navMenuContainer">
+                <p class="navMenu" id="DEALS" onclick="loading(DEALS)">DEALS</p>
+                <p class="navMenu" id="ПИЦА" onclick="loading(ПИЦА)">ПИЦА</p>
+                <p class="navMenu" id="ПРЕДЯСТИЯ" onclick="loading(ПРЕДЯСТИЯ)">ПРЕДЯСТИЯ</p>
+                <p class="navMenu" id="ПИЛЕ" onclick="loading(ПИЛЕ)">ПИЛЕ</p>
+                <p class="navMenu" id="ПАСТА" onclick="loading(ПАСТА)">ПАСТА</p>
+                <p class="navMenu" id="САЛАТИ" onclick="loading(САЛАТИ)">САЛАТИ</p>
+                <p class="navMenu" id="САНДВИЧИ" onclick="loading(САНДВИЧИ)">САНДВИЧИ</p>
+                <p class="navMenu" id="СОС" onclick="loading(СОС)">СОС</p>
+                <p class="navMenu" id="ДЕСЕРТИ" onclick="loading(ДЕСЕРТИ)">ДЕСЕРТИ</p>
+                <p class="navMenu" id="НАПИТКИ" onclick="loading(НАПИТКИ)">НАПИТКИ</p>
+            </div>
+            <!--NAVIGATION-->
 
-        <!--ACTIVEMENU-->
-        <div id="activeMenu">
+            <!--ACTIVEMENU-->
+            <div id="activeMenu">
 
+            </div>
+            <!--ACTIVEMENU-->
         </div>
-        <!--ACTIVEMENU-->
+        <script src="../js/callUs.js"></script>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/HamburgerBtn.js"></script>
+        <script src="../js/restaurantMenuManager.js"></script>
+        <script src="../js/restaurantMenuController.js"></script>
     </div>
-    <script src="../js/callUs.js"></script>
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/HamburgerBtn.js"></script>
-    <script src="../js/restaurantMenuManager.js"></script>
-    <script src="../js/restaurantMenuController.js"></script>
+    <script src="../js/loading.js"></script>
 </body>
-
 </html>

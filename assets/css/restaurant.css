@@ -491,3 +491,21 @@ body {
     opacity: 0.5;
     font-style: italic;
 }
+
+#zagruska {
+    box-sizing: border-box;
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    top: 43%;
+    left: 45%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 15px solid rgba(0, 0, 0, 0.0);
+    border-radius: 100%;
+}
+
+#zagruska img {
+    height: 80px;
+    width: 80px;   
+}
