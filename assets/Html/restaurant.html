@@ -9,13 +9,13 @@
     <link rel="stylesheet" type="text/css" href="../css/normalise.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/restaurant.css">
-    <link rel="stylesheet" type="text/css" href="../css/restaurant.css">
+    <script src="../js/loading.js"></script>
     <title>Document</title>
 </head>
 
 <body>
     <div id="zagruska"><img src="../images/zagruska.gif"></div>
-    <div id="allF" style="display: none">
+    <div id="allF" style="display:none">
         <!--................. HAMBURGER MENU...............-->
         <div id="appearMenu">
             <ul>
@@ -50,7 +50,14 @@
                             <li><a id="petNav4" class="banner" href="#">МЕНЮ</a></li>
                             <li><a href="#" class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
                         </ul>
+                        <div id="basketWrapper">
+                            <img id="basket2" src="../images/basketGrey.png" />
+                            <div id="orderCounter2">
+                                <p id="counterbe"></p>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
                 <!--........NAV BAR.........-->
 
@@ -66,7 +73,7 @@
                     <div id="basket">
                         <img id="basket1" src="../images/basketGrey.png">
                     </div>
-                    <span id="orderCounter">&nbsp;5&nbsp;</span>
+
                 </div>
 
                 <!--.........MOBILE MENU..............-->
@@ -75,16 +82,16 @@
         <!--NAVIGATION-->
         <div id="maincont">
             <div id="navMenuContainer">
-                <p class="navMenu" id="DEALS" onclick="loading(DEALS)">DEALS</p>
-                <p class="navMenu" id="ПИЦА" onclick="loading(ПИЦА)">ПИЦА</p>
-                <p class="navMenu" id="ПРЕДЯСТИЯ" onclick="loading(ПРЕДЯСТИЯ)">ПРЕДЯСТИЯ</p>
-                <p class="navMenu" id="ПИЛЕ" onclick="loading(ПИЛЕ)">ПИЛЕ</p>
-                <p class="navMenu" id="ПАСТА" onclick="loading(ПАСТА)">ПАСТА</p>
-                <p class="navMenu" id="САЛАТИ" onclick="loading(САЛАТИ)">САЛАТИ</p>
-                <p class="navMenu" id="САНДВИЧИ" onclick="loading(САНДВИЧИ)">САНДВИЧИ</p>
-                <p class="navMenu" id="СОС" onclick="loading(СОС)">СОС</p>
-                <p class="navMenu" id="ДЕСЕРТИ" onclick="loading(ДЕСЕРТИ)">ДЕСЕРТИ</p>
-                <p class="navMenu" id="НАПИТКИ" onclick="loading(НАПИТКИ)">НАПИТКИ</p>
+                <p class="navMenu">DEALS</p>
+                <p class="navMenu">ПИЦА</p>
+                <p class="navMenu">ПРЕДЯСТИЯ</p>
+                <p class="navMenu">ПИЛЕ</p>
+                <p class="navMenu">ПАСТА</p>
+                <p class="navMenu">САЛАТИ</p>
+                <p class="navMenu">САНДВИЧИ</p>
+                <p class="navMenu">СОС</p>
+                <p class="navMenu">ДЕСЕРТИ</p>
+                <p class="navMenu">НАПИТКИ</p>
             </div>
             <!--NAVIGATION-->
 
@@ -101,6 +108,6 @@
         <script src="../js/restaurantMenuManager.js"></script>
         <script src="../js/restaurantMenuController.js"></script>
     </div>
-    <script src="../js/loading.js"></script>
 </body>
+
 </html>

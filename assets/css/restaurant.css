@@ -40,7 +40,6 @@ div.container-fluid {
     margin-top: 45px;
     list-style: none;
     display: inline-flex;
-    float: right;
 }
 
 #petNav img {
@@ -95,14 +94,9 @@ div.container-fluid {
         padding-left: 15em;
     }
     #orderCounter{
-        width: 20px;
-        height: 20px;
-        position: relative;
-        right: 15px;
-        bottom: 9px;
         color: white;
         text-align: center;
-        font-size:15px;
+        font-size:1em;
         font-weight: 500;
         border: 2px solid white;
         border-radius: 100em;
@@ -481,6 +475,7 @@ body {
     color: #0073aa;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;
+    min-height: 40px;
 }
 
 .desc {
@@ -490,7 +485,69 @@ body {
     font-weight: 700;
     opacity: 0.5;
     font-style: italic;
+    min-height: 130px;
+    padding: 3px;
 }
+
+hr {
+    display: block;
+    margin: 0px 15px;
+    border-style: outset;
+    border-width: 1px;
+}
+
+.customBtn {
+    margin-top: 5px;
+}
+#basketWrapper{
+    width: 100px;
+    position: relative;
+    clear: right;
+    float: right;
+}
+
+#orderCounter2 {
+    position: absolute;
+    top: 21px;
+    left: 40px;
+    width: 20px;
+    height: 22px;
+    color: white;
+    text-align: center;
+    font-size:1em;
+    font-weight: 500;
+    border: 2px solid white;
+    border-radius: 100em;
+    background-color: darkgreen;
+    visibility: hidden;
+}
+
+#basket2{
+    width: 100px;
+    height: 100px;
+}
+
+.imena2 {
+    float: left;
+    font-size: 1em;
+    color: #0073aa;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.desc2 {
+    font-size: 1em;
+    color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    opacity: 0.5;
+    font-style: italic;
+    padding: 3px;
+    text-align: left;
+}
+
 
 #zagruska {
     box-sizing: border-box;
