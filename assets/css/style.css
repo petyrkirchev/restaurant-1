@@ -16,7 +16,6 @@ body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 24%, rgba(0, 0, 0, 0.35) 65%, rgba(0, 0, 0, 0.15) 85%, rgba(0, 0, 0, 0.05) 100%);
     border: none;
     display: inline-block;
-    
 }
 
 .container {
@@ -49,14 +48,12 @@ div.container-fluid {
         width: 900px;
         height: 85px;
     }
-    
     #petNav {
         position: absolute;
         top: 0px;
         left: 200px;
         width: 800px;
     }
-
 }
 
 @media screen and (max-width:899px) {
@@ -881,16 +878,19 @@ footer ul li {
     display: inline-block;
 }
 
-footer  ul li button {
+footer ul li button {
     border: none;
     background-color: white;
 }
-footer img{
+
+footer img {
     height: 50px;
 }
-footer ul:nth-child(2){
+
+footer ul:nth-child(2) {
     width: 60em;
 }
+
 footer div {
     padding: 0 20%;
     line-height: 40px;
@@ -899,4 +899,22 @@ footer div {
     color: #0d6490;
     text-align: right;
     width: 100%;
+}
+
+#zagruska {
+    box-sizing: border-box;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 43%;
+    left: 45%;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.35);
+    border: 10px solid rgba(0, 0, 0, 0.0);
+    border-radius: 100%;
+}
+
+#zagruska img {
+    height: 100px;
+    width: 100px;   
 }

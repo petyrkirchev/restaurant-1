@@ -14,7 +14,7 @@ function callUsRemove() {
     element2.style.visibility = "hidden";
 }
 if (document.getElementById("containerTest"))
-document.getElementById("containerTest").addEventListener("wheel", changeOnWheelBG, false);
+    document.getElementById("containerTest").addEventListener("wheel", changeOnWheelBG, false);
 
 function changeOnWheelBG() {
     var element = document.getElementById("navChangeBG");
@@ -29,7 +29,10 @@ function changeOnWheelBG() {
     var burger = document.getElementById("burger1");
     var logo1 = document.getElementById("logoDominos1");
     var basket = document.getElementById("basket1");
-    if (event.wheelDelta <= -120) {
+    if (document.body.scrollTop>0 && event.clientY>0) {
+        console.log(event.pageY);
+        console.log(document.body.scrollTop);
+        console.log(event.deltaY);
         element.style.background = "white";
         element.style.boxShadow = "2px 2px 1px #555555";
         logo.src = "assets/images/DominosLogoBlue.png"
