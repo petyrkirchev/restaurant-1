@@ -498,7 +498,6 @@ hr {
 
 .customBtn {
     margin-top: 5px;
-
 }
 #basketWrapper{
     width: 100px;
@@ -526,4 +525,25 @@ hr {
 #basket2{
     width: 100px;
     height: 100px;
+}
+
+.imena2 {
+    float: left;
+    font-size: 1em;
+    color: #0073aa;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.desc2 {
+    font-size: 1em;
+    color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    opacity: 0.5;
+    font-style: italic;
+    padding: 3px;
+    text-align: left;
 }
