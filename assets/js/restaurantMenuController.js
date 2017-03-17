@@ -23,17 +23,30 @@
                 var img = document.createElement("img");
                 var name = document.createElement("p");
                 var desc = document.createElement("p");
+                var line = document.createElement("hr");
+                var line2 = document.createElement("hr");
+                var but = document.createElement("button");
+                // var div2 = document.createElement("div");
                 activeMenu.appendChild(div);
                 div.appendChild(img);
                 div.appendChild(name);
+                div.appendChild(line);
                 div.appendChild(desc);
-                div.style.cssText = "float: left; boxSizing: border-box; width: 17%; height: 350px; border-radius: 10px; background-color: white; margin: 1em";
+                div.appendChild(line2);
+                // div.appendChild(div2);
+                div.style.height = "auto";
+                div.appendChild(but);
+                // div2.style.width = "17%";
+                // div2.style.height= "300px";
+                div.style.cssText = "float: left; boxSizing: border-box; width: 17%; height: 410px; border-radius: 10px; background-color: white; margin: 1em";
                 img.src = dishArray[dish].img;
-                img.style.cssText = "display: block; width: 100%; height: auto; border-top-left-radius: 10px; border-top-right-radius: 10px";
+                img.style.cssText = "display: block; width: 100%; height: 180px; border-top-left-radius: 10px; border-top-right-radius: 10px";
                 name.textContent = dishArray[dish].name;
                 name.className = "imena";
                 desc.textContent = dishArray[dish].desc;
                 desc.className = "desc";
+                but.textContent="ИЗБЕРЕТЕ";
+                but.className="btn btn-success btn-md font-bold customBtn";
             }
         }, false);
     }
