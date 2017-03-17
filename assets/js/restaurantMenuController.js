@@ -1,7 +1,8 @@
 (function () {
+    var ordered = [];
     function blackOnOut(event) {
-            event.target.style.cssText = "border: 3px rgba(0,0,0,0) solid;";
-        }
+        event.target.style.cssText = "border: 3px rgba(0,0,0,0) solid;";
+    }
     var menuDishes = document.getElementsByClassName("navMenu");
     for (var index = 0; index < menuDishes.length; index++) {
         menuDishes[index].addEventListener("mouseover", function whiteOnOver(event) {
@@ -13,7 +14,7 @@
                 menuDishes[index2].addEventListener("mouseout", blackOnOut, false);
                 menuDishes[index2].style.cssText = "border: 3px rgba(0,0,0,0) solid;";
             }
-            event.target.removeEventListener("mouseout", blackOnOut,false);
+            event.target.removeEventListener("mouseout", blackOnOut, false);
             event.target.style.cssText = "border: 3px white solid;";
             var activeMenu = document.getElementById("activeMenu");
             activeMenu.innerHTML = "";
@@ -45,8 +46,13 @@
                 name.className = "imena";
                 desc.textContent = dishArray[dish].desc;
                 desc.className = "desc";
-                but.textContent="ИЗБЕРЕТЕ";
-                but.className="btn btn-success btn-md font-bold customBtn";
+                but.textContent = "ИЗБЕРЕТЕ";
+                but.className = "btn btn-success btn-md font-bold customBtn";
+                but.addEventListener("click", function () {
+                    var counter = document.getElementById("counterbe");
+                    counter.textContent = ordered.length;
+                    if (ordered.length > 1) counter.style.visibility = "visible";
+                }, false);
             }
         }, false);
     }

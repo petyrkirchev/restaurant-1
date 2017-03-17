@@ -40,7 +40,6 @@ div.container-fluid {
     margin-top: 45px;
     list-style: none;
     display: inline-flex;
-    float: left;
 }
 
 #petNav img {
@@ -504,8 +503,10 @@ hr {
 #basketWrapper{
     width: 100px;
     position: relative;
-        float: right;
+    clear: right;
+    float: right;
 }
+
 #orderCounter2 {
     position: absolute;
     top: 21px;
@@ -519,9 +520,10 @@ hr {
     border: 2px solid white;
     border-radius: 100em;
     background-color: darkgreen;
+    visibility: hidden;
 }
-#basket2{
 
+#basket2{
     width: 100px;
     height: 100px;
 }
