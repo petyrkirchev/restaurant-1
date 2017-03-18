@@ -192,8 +192,9 @@
                 var counterVis = document.getElementById("orderCounter2");
                 counter.textContent = ordered.length;
                 var changedPrice = 0;
-                for (var index = 0; index < ordered.length; index++) {
-                    changedPrice += ordered[index].price;
+                var allItemsInBasket = document.getElementsByClassName("itemCurrentPrice");
+                for (var index = 0; index < allItemsInBasket.length; index++) {
+                    changedPrice += Number(allItemsInBasket[index].textContent.slice(0, (allItemsInBasket[index].textContent.length - 4)));
                 };
                 var priceP = document.getElementById("priceP");
                 priceP.textContent = "Цена до момента: " + changedPrice + " лв.";

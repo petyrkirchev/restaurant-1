@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="zagruska"><img src="assets/images/zagruska.gif"></div>
+  <div id="zagruska"><img src="assets/images/zagruska.gif"></div>
   <div id="allF" style="display: none">
     <div id="login"></div>
     <!--................. HAMBURGER MENU...............-->
@@ -21,7 +21,7 @@
       <ul>
         <li>ОБАДЕТЕ НИ СЕ <img height="30px" src="assets/images/callBlue.png"></li>
         <li>МЕНЮ</li>
-        <li><a class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
+        <li><a class="openBtn btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
         <li>СВЪРЖЕТЕ СЕ С НАС</li>
         <li>УСЛОВИЯ за ПОЛЗВАНЕ</li>
         <li>РЕСТОРАНТИ</li>
@@ -49,7 +49,7 @@
               <li>|</li>
               <li><a id="petNav3" href="#">EN</a></li>
               <li><a id="petNav4" href="assets/html/restaurant.html">МЕНЮ</a></li>
-              <li><a href="#" class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
+              <li><a href="#" class="openBtn btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
             </ul>
           </div>
         </div>
@@ -194,11 +194,51 @@
       <div>&copy; 2017 Domino's Pizza. All Rights Reserved</div>
     </footer>
 
+    <div id="loginMenu">
+      <div>
+
+        <h2><img style="width: 50px" src="assets/images/decor_elem_left_red.svg">Вход
+          <img style="width: 50px" src="assets/images/decor_elem_right_red.svg"></h2>
+
+        <button><span><img style="height: 40px" src="assets/images/facebook1.png">|</span>Facebook</button>
+
+        <form>
+          <input type="email" name="email" placeholder=" e-mail..." value="">
+          <input type="password" name="password" placeholder=" password..." value="">
+          <p> <a href="#">Забравена парола</a>
+            <span><input type="checkbox"><label>Запомни ме</label></span></p>
+        </form>
+
+        <button class="btn btn-lg btn-danger">Вход</button>
+        <h3 style="color:#bbbbbb">......................................................................</h3>
+        <h3>Нов член? Регистрация</h3>
+
+        <button class="btn btn-lg btn-info">Регистрация</button>
+      </div>
+    </div>
+    <div id="regMenu">
+      <div>
+        <h2>
+          <img style="width: 50px" src="assets/images/decor_elem_left_red.svg">
+          Регистрация
+          <img style="width: 50px" src="assets/images/decor_elem_right_red.svg">
+        </h2>
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="surname" placeholder="Surname">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <input type="password" name="passwordConf" placeholder="Password repeat">
+        <button class="btn btn-lg btn-success">Регистрация</button>
+      </div>
+    </div>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/HamburgerBtn.js"></script>
     <script src="assets/js/callUs.js"></script>
     <script src="assets/js/onScrollEvent.js"></script>
+    <script src="assets/js/loginService.js"></script>
+    <script src="assets/js/loginController.js"></script>
   </div>
 
 </body>
