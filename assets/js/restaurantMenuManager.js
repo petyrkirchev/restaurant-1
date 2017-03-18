@@ -10,7 +10,6 @@ function Dish(name, img, desc, price, weight) {
 
 var menu = (function () {
     var menuItems2 = {};
-    console.log(menuItems2);
     var menuDishes = document.getElementsByClassName("navMenu");
     for (var index = 0; index < menuDishes.length; index++) {
         menuItems2[menuDishes[index].textContent] = [];

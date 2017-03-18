@@ -535,6 +535,7 @@ hr {
     font-weight: 700;
     text-align: left;
     margin-top: 1em;
+    width: 100%;
 }
 
 .desc2 {
@@ -565,4 +566,45 @@ hr {
 #zagruska img {
     height: 80px;
     width: 80px;   
+}
+
+.quantity{
+    width: 20px;
+    height: auto;
+    float: left;
+    padding: 0px;
+    text-align: center;
+    margin:auto;
+    font-weight: 1200;
+    font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.itemQuantity{
+    width: 20px;
+    height: auto;
+    float: left;
+    padding: 0px;
+    text-align: center;
+    margin:auto;
+    font-weight: 1200;
+    font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.itemCurrentPrice{
+    padding-left: 100px;
+}
+
+#priceP {
+    float: right;
+    padding: 20px;
+    font-size: 2em;
+    color: #0073aa;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;   
+}
+.removeBut{
+    box-sizing: border-box;
+    float: right;
 }
