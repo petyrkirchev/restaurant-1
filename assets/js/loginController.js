@@ -1,4 +1,6 @@
 (function () {
+    //	........................Escape Manupulations.....................
+
 
     // ...................Starter Manupulations..................
     var openBtn = document.getElementsByClassName("openBtn");
@@ -38,8 +40,8 @@
             }
         }, false)
         inputsReg[3].addEventListener('focus', function (event) {
-                inputsReg[3].style.border = "1px solid #dfdfdf";
-                inputsReg[3].placeholder = "Password";
+            inputsReg[3].style.border = "1px solid #dfdfdf";
+            inputsReg[3].placeholder = "Password";
         }, false)
         inputsReg[4].addEventListener('blur', function (event) {
             if (passwordEntry !== passwordEntryConf) {
@@ -48,8 +50,8 @@
             }
         }, false)
         inputsReg[4].addEventListener('focus', function (event) {
-                inputsReg[4].style.border = "1px solid #dfdfdf";
-                inputsReg[4].placeholder = "Password repeat";
+            inputsReg[4].style.border = "1px solid #dfdfdf";
+            inputsReg[4].placeholder = "Password repeat";
         }, false)
         if (!userManager.isUserExists(emailReg) &&
             userManager.isPasswordValid(passwordEntry) &&
@@ -104,4 +106,43 @@
         }
         event.preventDefault()
     }, false)
+    //	........................Escape Manupulations.....................
+    loginMenu.addEventListener('click', function (event) {
+        event = event || window.event;
+        loginMenu.style.display = "none";
+        event.stopImmediatePropagation();
+        console.log(event);
+
+    }, true)
+
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '187620591743427',
+            xfbml: true,
+            version: 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+
+        FB.getLoginStatus(function ())
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    FB.login(function (response) {
+        if (response.status === 'connected') {
+            console.log("connected");
+        } else {
+            console.log("not connected");
+        }
+    });
+
 })();
