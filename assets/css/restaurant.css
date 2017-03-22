@@ -579,7 +579,9 @@ hr {
     font-size: 1em;
     font-family: 'Open Sans Condensed', sans-serif;
 }
-
+.quantity:hover {
+    cursor: pointer;
+}
 .itemQuantity{
     width: 20px;
     height: auto;
@@ -608,3 +610,4 @@ hr {
     box-sizing: border-box;
     float: right;
 }
+
