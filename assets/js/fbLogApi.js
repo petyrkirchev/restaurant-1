@@ -18,10 +18,10 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-    FB.login(function (response) {
+    function login(response) {
         if (response.status === 'connected') {
             console.log("connected");
         } else {
             console.log("not connected");
         }
-    });
+    };
