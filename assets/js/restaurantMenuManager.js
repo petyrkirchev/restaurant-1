@@ -1,14 +1,12 @@
-function Dish(name, img, desc, price, weight) {
-    this.name = name;
-    this.img = img;
-    this.desc = desc;
-    this.price = price;
-    this.weight = weight;
-}
-
-
-
 var menu = (function () {
+    function Dish(name, img, desc, price, weight) {
+        this.name = name;
+        this.img = img;
+        this.desc = desc;
+        this.price = price;
+        this.weight = weight;
+    }
+
     var menuItems2 = {};
     var menuDishes = document.getElementsByClassName("navMenu");
     for (var index = 0; index < menuDishes.length; index++) {
