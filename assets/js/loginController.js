@@ -123,7 +123,6 @@
         });
         FB.AppEvents.logPageView();
 
-        FB.getLoginStatus(function ())
     };
 
     (function (d, s, id) {
