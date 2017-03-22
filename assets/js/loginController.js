@@ -107,11 +107,11 @@
         event.preventDefault()
     }, false)
     //	........................Escape Manupulations.....................
-    loginMenu.addEventListener('click', function (event) {
-        event = event || window.event;
-        loginMenu.style.display = "none";
-        event.stopImmediatePropagation();
-        console.log(event);
+    // loginMenu.addEventListener('click', function (event) {
+    //     event = event || window.event;
+    //     loginMenu.style.display = "none";
+    //     event.stopPropagation();
+    //     console.log(event);
 
-    }, true);
+    // }, true);
 })();

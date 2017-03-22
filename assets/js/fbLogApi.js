@@ -5,6 +5,13 @@
             version: 'v2.8'
         });
         FB.AppEvents.logPageView();
+        FB.getLoginStatus(function(response) {
+        if (response.status === 'connected') {
+            console.log("connected");
+        } else {
+            console.log("not connected");
+        }
+    });
 
     };
     (function (d, s, id) {
@@ -18,10 +25,13 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-    FB.getLoginStatus(function(response) {
-        if (response.status === 'connected') {
-            console.log("connected");
-        } else {
-            console.log("not connected");
-        }
-    });
+    function login(){
+        FB.login(function(response){
+            if(response.status === 'connected'){
+                console.log("connected");
+            }else {
+                console.log("not connected")
+            }
+        });
+    }   
+    
