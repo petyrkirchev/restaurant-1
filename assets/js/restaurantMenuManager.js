@@ -7,16 +7,16 @@ var menu = (function () {
         this.weight = weight;
     }
 
-    var menuItems2 = {};
+    var menuItems = {};
     var menuDishes = document.getElementsByClassName("navMenu");
     for (var index = 0; index < menuDishes.length; index++) {
-        menuItems2[menuDishes[index].textContent] = [];
+        menuItems[menuDishes[index].textContent] = [];
     }
     return {
         addDish: function (name, img, desc, price, weight, type) {
             var newDish = new Dish(name, img, desc, price, weight);
-            if (typeof menuItems2[type] != "undefined") {
-                menuItems2[type].push(newDish);
+            if (typeof menuItems[type] != "undefined") {
+                menuItems[type].push(newDish);
             } else {
                 console.log("Wrong type");
             }
@@ -26,9 +26,9 @@ var menu = (function () {
 
         },
         getDishByButId: function (butId) {
-            var keys = Object.keys(menuItems2);
+            var keys = Object.keys(menuItems);
             for (var index = 0; index < keys.length; index++) {
-                var value = menuItems2[keys[index]];
+                var value = menuItems[keys[index]];
                 for (var index2 = 0; index2 < value.length; index2++) {
                     if (value[index2].name == butId) {
                         return value[index2];
@@ -37,8 +37,8 @@ var menu = (function () {
             }
         },
         getDishes: function (string) {
-            if (typeof menuItems2[string] != "undefined") {
-                return menuItems2[string];
+            if (typeof menuItems[string] != "undefined") {
+                return menuItems[string];
             } else {
                 console.log("Wrong type");
             }

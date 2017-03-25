@@ -599,7 +599,8 @@ hr {
 }
 
 #priceP {
-    float: right;
+    position: fixed;
+    left: 60%;
     padding: 20px;
     font-size: 2em;
     color: #0073aa;
