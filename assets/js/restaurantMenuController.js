@@ -79,9 +79,9 @@
             currentPrice += ordered[index].price * ordered[index].quantity; // -------
         };
         var priceP = document.getElementById("priceP");
-        priceP.id = "priceP";
         priceP.textContent = "Цена до момента: " + currentPrice + " лв.";
     }
+    // ORDER BASKET WITH FUNCTIONALITY AND CSS
     basket.addEventListener("click", function () {
         setPrice();
         var activeMenu = document.getElementById("activeMenu");
@@ -154,13 +154,7 @@
                 var price = Number(itemCurrentPrice.textContent.slice(0, (itemCurrentPrice.textContent.length - 4))) / Number(itemQuantity.textContent);
                 itemQuantity.textContent = "" + (Number(itemQuantity.textContent) + 1);
                 itemCurrentPrice.textContent = "" + price * (Number(itemQuantity.textContent)) + " лв.";
-                var allItemsInBasket = document.getElementsByClassName("itemCurrentPrice");
-                var changedPrice = 0;
-                for (var index = 0; index < allItemsInBasket.length; index++) {
-                    changedPrice += Number(allItemsInBasket[index].textContent.slice(0, (allItemsInBasket[index].textContent.length - 4)));
-                };
-                var priceP = document.getElementById("priceP");
-                priceP.textContent = "Цена до момента: " + changedPrice + " лв.";
+                setPrice();
             };
             function triangleDown(event) {
                 var ordered = currentOrder.getAllOrders();
@@ -175,13 +169,7 @@
                     };
                     itemQuantity.textContent = "" + (Number(itemQuantity.textContent) - 1);
                     itemCurrentPrice.textContent = "" + price * (Number(itemQuantity.textContent)) + " лв.";
-                    var allItemsInBasket = document.getElementsByClassName("itemCurrentPrice");
-                    var changedPrice = 0;
-                    for (var index = 0; index < allItemsInBasket.length; index++) {
-                        changedPrice += Number(allItemsInBasket[index].textContent.slice(0, (allItemsInBasket[index].textContent.length - 4)));
-                    };
-                    var priceP = document.getElementById("priceP");
-                    priceP.textContent = "Цена до момента: " + changedPrice + " лв.";
+                    setPrice();
                 };
             };
             // Remove button with creation and functionality.
@@ -206,30 +194,32 @@
                 var counter = document.getElementById("counterbe");
                 var counterVis = document.getElementById("orderCounter2");
                 counter.textContent = ordered.length;
-                var changedPrice = 0;
-                var allItemsInBasket = document.getElementsByClassName("itemCurrentPrice");
-                for (var index = 0; index < allItemsInBasket.length; index++) {
-                    changedPrice += Number(allItemsInBasket[index].textContent.slice(0, (allItemsInBasket[index].textContent.length - 4)));
-                };
-                var priceP = document.getElementById("priceP");
-                priceP.textContent = "Цена до момента: " + changedPrice + " лв.";
+                setPrice();
                 if (ordered.length > 0) { // -------
                     counterVis.style.visibility = "visible";
                 } else {
                     counterVis.style.visibility = "hidden";
-                    priceP.style.display = "none";
                 };
             }, false);
         };
     }, false);
-    var orderBut = document.getElementById("orderNow");
-     orderBut.addEventListener("click", function (event) {
-        event.preventDefault();
-        console.log(ordered)
-        if (ordered.length > 0) {
-            alert("Браво ти поръча!");
-        } else {
-            alert("Първо си избери, после си го поръчай!");
-        }
-    }, false);
+    var orderBut = document.getElementsByClassName("orderNow");
+    for (var index = 0; index < orderBut.length; index++)
+        orderBut[index].addEventListener("click", function (event) {
+            console.log(orderBut);
+            console.log(ordered)
+            if (ordered.length > 0) {
+                alert("Браво ти поръча!");
+                ordered.length = 0;
+                setPrice();
+                var counter = document.getElementById("counterbe");
+                var counterVis = document.getElementById("orderCounter2");
+                counter.textContent = ordered.length;
+                counterVis.style.visibility = "hidden";
+                var activeMenu = document.getElementById("activeMenu");
+                activeMenu.innerHTML = "";
+            } else {
+                alert("Първо си избери, после си го поръчай!");
+            }
+        }, false);
 })();
