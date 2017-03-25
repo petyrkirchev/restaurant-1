@@ -436,6 +436,7 @@ div.container-fluid {
     background: rgba(0, 0, 0,0.3);
     width: auto;
     margin-top: 92px;
+    margin-bottom: 1em;
     text-align: center;
     min-height: 5em;
 }
@@ -599,10 +600,7 @@ hr {
 }
 
 #priceP {
-    position: fixed;
-    left: 60%;
-    padding: 20px;
-    font-size: 2em;
+    font-size: 1.3em;
     color: #0073aa;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;   

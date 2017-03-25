@@ -63,6 +63,7 @@
                     var counterVis = document.getElementById("orderCounter2");
                     counter.textContent = ordered.length;///-----
                     if (ordered.length > 0) counterVis.style.visibility = "visible"; // ----
+                    setPrice();
                 };
                 but.addEventListener("click", btnFunctionality, false);
             }
@@ -72,23 +73,24 @@
     var ordered = currentOrder.getAllOrders(); // -------
     var uniqueId = 0;
     var basket = document.getElementById("basket2");
-    basket.addEventListener("click", function () {
+    function setPrice() {
         var currentPrice = 0;
         for (var index = 0; index < ordered.length; index++) { // -------
-            currentPrice += ordered[index].price*ordered[index].quantity; // -------
+            currentPrice += ordered[index].price * ordered[index].quantity; // -------
         };
+        var priceP = document.getElementById("priceP");
+        priceP.id = "priceP";
+        priceP.textContent = "Цена до момента: " + currentPrice + " лв.";
+    }
+    basket.addEventListener("click", function () {
+        setPrice();
         var activeMenu = document.getElementById("activeMenu");
         activeMenu.innerHTML = "";
         var div = document.createElement("div");
         activeMenu.appendChild(div);
         div.id = "basketDiv";
-        if (ordered.length != 0) {
-            var priceP = document.createElement("p");
-            div.appendChild(priceP);
-            priceP.id = "priceP";
-            priceP.textContent = "Цена до момента: " + currentPrice + " лв.";
-        };
-        div.style.cssText = "box-sizing: border-box; width: 100%; border-radius: 10px; background-color: white; margin: 1em";
+
+        div.style.cssText = "box-sizing: border-box; width: 60%; border-radius: 10px; background-color: white; margin:auto;";
         div.style.height = 209 * ordered.length + "px"; // -------
         for (var meal = 0; meal < ordered.length; meal++) { // -------
             uniqueId = uniqueId + 1;
@@ -96,6 +98,7 @@
             div.appendChild(divbe);
             var itemImg = document.createElement("img");
             divbe.appendChild(itemImg);
+            divbe.style.cssText = "width: 100%, margin: auto;";
             divbe.id = "div" + uniqueId;
             itemImg.src = ordered[meal].img;    // -------
             itemImg.style.cssText = "float: left; clear: left; display: block; width: 198.89px; height: 209px; border-radius: 20px; padding: 0.8em";
@@ -218,5 +221,15 @@
                 };
             }, false);
         };
+    }, false);
+    var orderBut = document.getElementById("orderNow");
+     orderBut.addEventListener("click", function (event) {
+        event.preventDefault();
+        console.log(ordered)
+        if (ordered.length > 0) {
+            alert("Браво ти поръча!");
+        } else {
+            alert("Първо си избери, после си го поръчай!");
+        }
     }, false);
 })();

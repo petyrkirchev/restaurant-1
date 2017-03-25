@@ -21,12 +21,7 @@
             <ul>
                 <li>ОБАДЕТЕ НИ СЕ <img height="30px" src="../images/callBlue.png"></li>
                 <li>МЕНЮ</li>
-                <li><a class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
-                <li>СВЪРЖЕТЕ СЕ С НАС</li>
-                <li>УСЛОВИЯ за ПОЛЗВАНЕ</li>
-                <li>РЕСТОРАНТИ</li>
-                <li>АЛЕРГЕНИ</li>
-                <li><a>BG</a>|<a>EN</a></li>
+                <li><button id="orderNow" class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</button></li>
                 <li onclick="burgerDissapear()">EXIT</li>
             </ul>
         </div>
@@ -44,10 +39,10 @@
                             <li><img onmouseover="callUs()" onmouseout="callUsRemove()" id="slushalka" height="35px" src="../images/callGrey.png">
                                 <span id="hoverSpan">ОБАДЕТЕ НИ СЕ</span><span id="hoverSpanAfter"></span></li>
                             <li><a id="petNav1" class="banner" href="#">070012525</a></li>
-                            <li><a id="petNav2" class="banner" href="#">BG</a></li>
-                            <li>|</li>
-                            <li><a id="petNav3" class="banner" href="#">EN</a></li>
                             <li><a href="#" class="btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
+                            <li>
+                                <p id="priceP">Цена до момента: 0 лв.</p>
+                            </li>
                         </ul>
                         <div id="basketWrapper">
                             <img id="basket2" src="../images/basketGrey.png" />
