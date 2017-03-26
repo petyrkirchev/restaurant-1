@@ -79,7 +79,7 @@
             currentPrice += ordered[index].price * ordered[index].quantity; // -------
         };
         var priceP = document.getElementById("priceP");
-        priceP.textContent = "Цена до момента: " + currentPrice + " лв.";
+        priceP.textContent = "Сума: " + currentPrice + " лв.";
     }
     // ORDER BASKET WITH FUNCTIONALITY AND CSS
     basket.addEventListener("click", function () {

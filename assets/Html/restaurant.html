@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../css/normalise.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/restaurant.css">
+
     <script src="../js/loading.js"></script>
     <title>Document</title>
 </head>
@@ -19,7 +20,6 @@
         <!--................. HAMBURGER MENU...............-->
         <div id="appearMenu">
             <ul>
-                <li>ОБАДЕТЕ НИ СЕ <img height="30px" src="../images/callBlue.png"></li>
                 <li>МЕНЮ</li>
                 <li><button class="btn btn-success btn-md font-bold orderNow">ПОРЪЧАЙ СЕГА</button></li>
                 <li onclick="burgerDissapear()">EXIT</li>
@@ -36,18 +36,16 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul id="petNav">
-                            <li><img onmouseover="callUs()" onmouseout="callUsRemove()" id="slushalka" height="35px" src="../images/callGrey.png">
-                                <span id="hoverSpan">ОБАДЕТЕ НИ СЕ</span><span id="hoverSpanAfter"></span></li>
-                            <li><a id="petNav1" class="banner" href="#">070012525</a></li>
                             <li><button class="btn btn-success btn-md font-bold orderNow">ПОРЪЧАЙ СЕГА</button></li>
-                            <li>
-                                <p id="priceP">Цена до момента: 0 лв.</p>
-                            </li>
+                            <li><a id="petNav4" href="../html/restaurant.html">МЕНЮ</a></li>
+                            <li><a href="#" class="openBtn btn btn-success btn-md font-bold">Login</a></li>
+                            <img id="login" src="../images/loginIcon.png"></img>
                         </ul>
                         <div id="basketWrapper">
                             <img id="basket2" src="../images/basketGrey.png" />
                             <div id="orderCounter2">
                                 <p id="counterbe"></p>
+                                <p id="priceP">Сума: 0 лв.</p>
                             </div>
                         </div>
                     </div>
@@ -95,6 +93,62 @@
             </div>
             <!--ACTIVEMENU-->
         </div>
+        <footer>
+            <ul>
+                <li><button><img src="../images/070012525.png"></button></li>
+                <li><button><a href="https://www.facebook.com/DominosBulgaria"><img src="../images/facebook.png"></a></button></li>
+                <li><button><a href="https://twitter.com/DominosBulgaria"><img src="../images/twitter.png"></a></button></li>
+                <li><button><a href="https://www.instagram.com/dominos_bg/"><img src="../images/instagram.png"></a></button></li>
+                <li><button><a href="https://plus.google.com/u/0/111958562895938630854"><img src="../images/googleplus.png"></a></button></li>
+                <li><button><a href="https://www.youtube.com/channel/UCUTBiIm_r68gSa1JY2tgDLg"><img src="../images/youtube.png"></a></button></li>
+            </ul>
+            <div>&copy; 2017 Momino's Pizza. All Rights Reserved</div>
+        </footer>
+
+        <div id="loginMenu">
+            <div>
+
+                <h2><img style="width: 50px" src="../images/decor_elem_left_red.svg">Вход
+                    <img style="width: 50px" src="../images/decor_elem_right_red.svg"></h2>
+
+                <button id="facebook-login-btn"><span><img style="height: 40px" src="../images/facebook1.png">|</span>Facebook</button>
+
+                <form>
+                    <input type="email" name="email" placeholder=" e-mail..." value="">
+                    <input type="password" name="password" placeholder=" password..." value="">
+                    <p>
+                        <span><input id="remmemberMe" type="checkbox"><label>Запомни ме</label></span></p>
+                </form>
+
+                <button class="btn btn-lg btn-danger">Вход</button>
+                <h3 style="color:#bbbbbb">......................................................................</h3>
+                <h3>Нов член? Регистрация</h3>
+
+                <button class="btn btn-lg btn-info">Регистрация</button>
+                <div id="exit">X</div>
+            </div>
+        </div>
+        <div id="regMenu">
+            <div>
+                <h2>
+                    <img style="width: 50px" src="../images/decor_elem_left_red.svg"> <span>Регистрация</span>
+                    <img style="width: 50px" src="../images/decor_elem_right_red.svg">
+                </h2>
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="surname" placeholder="Surname">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="passwordConf" placeholder="Password repeat">
+                <button class="btn btn-lg btn-success">Регистрация</button>
+                <div id="exit1">X</div>
+            </div>
+        </div>
+        <div id="accMenu">
+            <p></p>
+            <p></p>
+            <button id="logOut">Log Out</button>
+            <div id="exitAcc">X</div>
+        </div>
         <script src="../js/cart.js"></script>
         <script src="../js/callUs.js"></script>
         <script src="../js/jquery.min.js"></script>
@@ -102,6 +156,8 @@
         <script src="../js/HamburgerBtn.js"></script>
         <script src="../js/restaurantMenuManager.js"></script>
         <script src="../js/restaurantMenuController.js"></script>
+        <script src="../js/loginService.js"></script>
+        <script src="../js/restorantController.js"></script>
 
     </div>
 </body>

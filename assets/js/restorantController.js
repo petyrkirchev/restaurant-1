@@ -2,7 +2,8 @@
     // ...................Starter Manupulations..................
     var openBtn = document.getElementsByClassName("openBtn");
     var loginMenu = document.getElementById("loginMenu");
-    openBtn[1].addEventListener('click', function (event) {
+    openBtn[0].style.backgroundColor= "#0f74a8";
+    openBtn[0].addEventListener('click', function (event) {
         loginMenu.style.display = "block";
     })
     // .................Register form..................
@@ -81,7 +82,7 @@
             remmemberMe(email, password, remCheck.checked);
             findUserAccount(email);
             console.log(remCheck.checked);
-            openBtn[1].style.display = "none";
+            openBtn[0].style.display = "none";
             loginIcon.style.display = "block";
             loginMenu.style.display = "none";
         }
@@ -138,7 +139,7 @@
         loginAcc.style.position = "relative";
         loginAcc.style.bottom = "5px";
         loginAcc.style.left = "35px";
-        openBtn[1].parentNode.parentNode.appendChild(loginAcc);
+        openBtn[0].parentNode.parentNode.appendChild(loginAcc);
     }
 
     // ........................Escape Manupulations.....................

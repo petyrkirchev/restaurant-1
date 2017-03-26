@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width = device-width, initial-scale=1">
-
+  
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <title>Momino's pizza</title>
@@ -13,17 +13,16 @@
 </head>
 
 <body>
-  <script src="assets/js/fbLogApi.js"></script>
+  <!--<script id="fbLogApi.js">-->
+  </script>
   <div id="zagruska"><img src="assets/images/zagruska.gif"></div>
   <div id="allF" style="display: none">
-    <div id="login"></div>
     <!--................. HAMBURGER MENU...............-->
     <div id="appearMenu">
       <ul>
         <li>ОБАДЕТЕ НИ СЕ <img height="30px" src="assets/images/callBlue.png"></li>
-        <li >МЕНЮ</li>
-        <li><a onclick="" class="openBtn btn btn-success btn-md font-bold">Login</a></li>
-        <li>СВЪРЖЕТЕ СЕ С НАС</li>
+        <li><a href="assets/html/restaurant.html">МЕНЮ</li>
+        <li><a class="openBtn btn btn-success btn-md font-bold">ПОРЪЧАЙ СЕГА</a></li>
         <li onclick="burgerDissapear()">EXIT</li>
       </ul>
     </div>
@@ -44,7 +43,9 @@
               <li><a id="petNav1" href="#">070012525</a></li>
               <li><a id="petNav4" href="assets/html/restaurant.html">МЕНЮ</a></li>
               <li><a href="#" class="openBtn btn btn-success btn-md font-bold">Login</a></li>
+              <img id="login" src="assets/images/loginIcon.png"></img>
             </ul>
+
           </div>
         </div>
         <!--........NAV BAR.........-->
@@ -67,27 +68,11 @@
         <!--.........MOBILE MENU..............-->
       </nav>
       <!--.........Carousel..............-->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="assets/images/416_bg_banner.jpg" width="100%" height="100%" />
-            <div class="carousel-caption">
-            </div>
-          </div>
-          <div class="item">
-            <img src="assets/images/406_bg_banner.jpg" width="100%" height="100%" />
-            <div class="carousel-caption">
-            </div>
-          </div>
-        </div>
+      <div id="myCarousel1">
       </div>
     </div>
     <!--.........Carousel..............-->
-    <div class="container">
+    <!--<div class="container">
       <div class="articlesContainer">
         <article class="articles">
           <img src="assets/images/deal1.png">
@@ -125,13 +110,11 @@
             </div>
         </article>
       </div>
-    </div>
-    <div class="container">
+    </div>-->
+    <!--<div class="container">
       <div id="main">
         <section>
           <div class="box box-red-order">
-            <!--<img style="width: 50px" src="assets/images/decor_elem_left_white.svg" />
-        <img style="width: 50px" src="assets/images/decor_elem_right_white.svg" />-->
             <h3><img style="width: 50px" src="assets/images/decor_elem_left_white.svg" />PIZZA TRACKER<img style="width: 50px"
                 src="assets/images/decor_elem_right_white.svg" /></h3>
             <p>Следете поръчката си с нашия уникален Pizza Tracker!</p>
@@ -167,25 +150,17 @@
           <div><img src="assets/images/iphone_6.png"></div>
         </aside>
       </div>
-    </div>
+    </div>-->
     <footer>
       <ul>
-        <li><button>МЕНЮ</button></li>
-        <li><button>РЕСТОРАНТИ</button></li>
-        <li><button>СВЪРЖЕТЕ СЕ С НАС</button></li>
-        <li><button>УСЛОВИЯ ЗА ПОЛЗВАНЕ</button></li>
-        <li><button>АЛЕРГЕНИ</button></li>
-        <li><button>КАНДИДАТСТВАНЕ ЗА РАБОТА</button></li>
-      </ul>
-      <ul>
         <li><button><img src="assets/images/070012525.png"></button></li>
-        <li><button><img src="assets/images/facebook.png"></button></li>
-        <li><button><img src="assets/images/twitter.png"></button></li>
-        <li><button><img src="assets/images/instagram.png"></button></li>
-        <li><button><img src="assets/images/googleplus.png"></button></li>
-        <li><button><img src="assets/images/youtube.png"></button></li>
+        <li><button><a href="https://www.facebook.com/DominosBulgaria"><img src="assets/images/facebook.png"></a></button></li>
+        <li><button><a href="https://twitter.com/DominosBulgaria"><img src="assets/images/twitter.png"></a></button></li>
+        <li><button><a href="https://www.instagram.com/dominos_bg/"><img src="assets/images/instagram.png"></a></button></li>
+        <li><button><a href="https://plus.google.com/u/0/111958562895938630854"><img src="assets/images/googleplus.png"></a></button></li>
+        <li><button><a href="https://www.youtube.com/channel/UCUTBiIm_r68gSa1JY2tgDLg"><img src="assets/images/youtube.png"></a></button></li>
       </ul>
-      <div>&copy; 2017 Domino's Pizza. All Rights Reserved</div>
+      <div>&copy; 2017 Momino's Pizza. All Rights Reserved</div>
     </footer>
 
     <div id="loginMenu">
@@ -194,13 +169,13 @@
         <h2><img style="width: 50px" src="assets/images/decor_elem_left_red.svg">Вход
           <img style="width: 50px" src="assets/images/decor_elem_right_red.svg"></h2>
 
-        <button onclick="login()"><span><img style="height: 40px" src="assets/images/facebook1.png">|</span>Facebook</button>
+        <button id="facebook-login-btn"><span><img style="height: 40px" src="assets/images/facebook1.png">|</span>Facebook</button>
 
         <form>
           <input type="email" name="email" placeholder=" e-mail..." value="">
           <input type="password" name="password" placeholder=" password..." value="">
-          <p> <a href="#">Забравена парола</a>
-            <span><input type="checkbox"><label>Запомни ме</label></span></p>
+          <p>
+            <span><input id="remmemberMe" type="checkbox"><label>Запомни ме</label></span></p>
         </form>
 
         <button class="btn btn-lg btn-danger">Вход</button>
@@ -208,12 +183,13 @@
         <h3>Нов член? Регистрация</h3>
 
         <button class="btn btn-lg btn-info">Регистрация</button>
+        <div id="exit">X</div>
       </div>
     </div>
     <div id="regMenu">
       <div>
         <h2>
-          <img style="width: 50px" src="assets/images/decor_elem_left_red.svg"> Регистрация
+          <img style="width: 50px" src="assets/images/decor_elem_left_red.svg"> <span>Регистрация</span>
           <img style="width: 50px" src="assets/images/decor_elem_right_red.svg">
         </h2>
         <input type="text" name="name" placeholder="Name">
@@ -222,9 +198,20 @@
         <input type="password" name="password" placeholder="Password">
         <input type="password" name="passwordConf" placeholder="Password repeat">
         <button class="btn btn-lg btn-success">Регистрация</button>
+        <div id="exit1">X</div>
       </div>
     </div>
-
+    <div id="accMenu">
+      <p></p>
+      <p></p>
+      <button id="logOut">Log Out</button>
+      <div id="exitAcc">X</div>
+    </div>
+    <!--<div id="status"></div>
+    <button onclick="loginFB()" id="login">Login</button>
+    <div class="fb-like" data-share="true" data-width="450" data-show-faces="true">-->
+    </div>
+    <script src="assets/js/carousel.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/HamburgerBtn.js"></script>

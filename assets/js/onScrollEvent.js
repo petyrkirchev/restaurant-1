@@ -7,8 +7,6 @@ function changeOnWheelBG() {
     var p = document.getElementById("petNav");
     var hSpan = document.getElementById("hoverSpan");
     var anchor1 = document.getElementById("petNav1");
-    var anchor2 = document.getElementById("petNav2");
-    var anchor3 = document.getElementById("petNav3");
     var anchor4 = document.getElementById("petNav4");
     var burger = document.getElementById("burger1");
     var logo1 = document.getElementById("logoDominos1");
@@ -21,8 +19,6 @@ function changeOnWheelBG() {
         p.style.color = "#808080";
         hSpan.style.color = "#ffffff";
         anchor1.style.color = "#808080";
-        anchor2.style.color = "#808080";
-        anchor3.style.color = "#808080";
         anchor4.style.color = "#808080";
         burger.src = "assets/images/menuBtnGrey.png";
         basket.src = "assets/images/basketGrey.png";
@@ -33,8 +29,6 @@ function changeOnWheelBG() {
         slushalka.src = "assets/images/call.png"
         p.style.color = "#ffffff";
         anchor1.style.color = "#ffffff";
-        anchor2.style.color = "#ffffff";
-        anchor3.style.color = "#ffffff";
         anchor4.style.color = "#ffffff";
         burger.src = "assets/images/menuBtn.png";
         basket.src = "assets/images/basket.png";
@@ -43,3 +37,6 @@ function changeOnWheelBG() {
         element.style.boxShadow = "none";
     }
 }
+
+
+

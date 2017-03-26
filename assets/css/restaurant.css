@@ -1,4 +1,5 @@
 /*NAV BAR STYLE*/
+
 div.container-fluid {
     width: 1200px;
 }
@@ -93,20 +94,20 @@ div.container-fluid {
         width: 33%;
         padding-left: 15em;
     }
-    #orderCounter{
+    #orderCounter {
         color: white;
         text-align: center;
-        font-size:1em;
+        font-size: 1em;
         font-weight: 500;
         border: 2px solid white;
         border-radius: 100em;
         background-color: darkgreen;
     }
 }
+
 @media screen and (max-width:820px) {
     div#nav-mobile img {
         height: 65px;
-        
     }
     div#nav-mobile div:nth-child(1) {
         width: 33%;
@@ -121,10 +122,10 @@ div.container-fluid {
         padding-left: 12em;
     }
 }
+
 @media screen and (max-width:800px) {
     div#nav-mobile img {
         height: 65px;
-        
     }
     div#nav-mobile div:nth-child(1) {
         width: 33%;
@@ -139,6 +140,7 @@ div.container-fluid {
         padding-left: 13em;
     }
 }
+
 @media screen and (max-width:768px) {
     div#nav-mobile img {
         height: 65px;
@@ -156,6 +158,7 @@ div.container-fluid {
         padding-left: 12em;
     }
 }
+
 @media screen and (min-width:730px)and(max-width:767px) {
     div#nav-mobile img {
         height: 65px;
@@ -173,6 +176,7 @@ div.container-fluid {
         padding-left: 10em;
     }
 }
+
 @media screen and (min-width:685px) and (max-width:710px) {
     div#nav-mobile img {
         height: 65px;
@@ -190,6 +194,7 @@ div.container-fluid {
         padding-left: 8em;
     }
 }
+
 @media screen and (min-width:635px) and (max-width:685px) {
     div#nav-mobile img {
         height: 65px;
@@ -207,6 +212,7 @@ div.container-fluid {
         padding-left: 6em;
     }
 }
+
 @media screen and (max-width:634px) {
     div#nav-mobile img {
         height: 65px;
@@ -224,6 +230,7 @@ div.container-fluid {
         padding-left: 6em;
     }
 }
+
 @media screen and (max-width:588px) {
     div#nav-mobile img {
         height: 50px;
@@ -241,6 +248,7 @@ div.container-fluid {
         padding-left: 6em;
     }
 }
+
 @media screen and (max-width:568px) {
     div#nav-mobile img {
         height: 50px;
@@ -258,6 +266,7 @@ div.container-fluid {
         padding-left: 6em;
     }
 }
+
 @media screen and (max-width:480px) {
     div#nav-mobile img {
         height: 50px;
@@ -275,6 +284,7 @@ div.container-fluid {
         padding-left: 5em;
     }
 }
+
 @media screen and (max-width:450px) {
     div#nav-mobile img {
         height: 45px;
@@ -292,6 +302,7 @@ div.container-fluid {
         padding-left: 4em;
     }
 }
+
 @media screen and (max-width:430px) {
     div#nav-mobile img {
         height: 42px;
@@ -309,6 +320,7 @@ div.container-fluid {
         padding-left: 4em;
     }
 }
+
 @media screen and (max-width:390px) {
     div#nav-mobile img {
         height: 40px;
@@ -326,11 +338,12 @@ div.container-fluid {
         padding-left: 4em;
     }
 }
+
 @media screen and (max-width:360px) {
-         #orderCounter{
+    #orderCounter {
         right: 15px;
         bottom: 6px;
-        font-size:12px;
+        font-size: 12px;
     }
     div#nav-mobile img {
         height: 38px;
@@ -348,11 +361,12 @@ div.container-fluid {
         padding-left: 3em;
     }
 }
+
 @media screen and (max-width:320px) {
-     #orderCounter{
+    #orderCounter {
         right: 17px;
         bottom: 5px;
-        font-size:12px;
+        font-size: 12px;
     }
     div#nav-mobile img {
         height: 35px;
@@ -371,22 +385,25 @@ div.container-fluid {
     }
 }
 
-#appearMenu{
+#appearMenu {
     display: none;
     position: fixed;
     height: 100%;
     background: white;
     z-index: 9999;
 }
-#appearMenu ul{
+
+#appearMenu ul {
     list-style-type: none;
     padding: 0 20px;
 }
-#appearMenu ul li{
+
+#appearMenu ul li {
     border-bottom: 1px solid #0d6490;
     width: 100%;
     line-height: 45px;
 }
+
 
 /*<span id="hoverSpan" >ОБАДЕТЕ НИ СЕ<span>*/
 
@@ -422,8 +439,10 @@ div.container-fluid {
 
 #navChangeBG {
     background-color: white;
+    height: 100px;
 }
-#petNav li{
+
+#petNav li {
     color: #808080;
 }
 
@@ -433,7 +452,7 @@ div.container-fluid {
 
 #navMenuContainer {
     box-sizing: border-box;
-    background: rgba(0, 0, 0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     width: auto;
     margin-top: 92px;
     margin-bottom: 1em;
@@ -443,13 +462,11 @@ div.container-fluid {
 
 #maincont {
     width: auto;
-    margin:auto;
-
+    margin: auto;
 }
 
-
 .navMenu {
-    border: 3px rgba(0,0,0,0) solid;
+    border: 3px rgba(0, 0, 0, 0) solid;
     background: none;
     font-weight: 700;
     color: white;
@@ -457,8 +474,7 @@ div.container-fluid {
     display: inline-block;
     margin: 1.3em 0;
     padding: 0 1em;
-
-
+    cursor: pointer;
 }
 
 body {
@@ -500,9 +516,12 @@ hr {
 .customBtn {
     margin-top: 5px;
 }
-#basketWrapper{
-    width: 100px;
+
+#basketWrapper {
+    width: 80px;
     position: relative;
+    right: 200px;
+    /*bottom: 90px;*/
     clear: right;
     float: right;
 }
@@ -515,7 +534,7 @@ hr {
     height: 22px;
     color: white;
     text-align: center;
-    font-size:1em;
+    font-size: 1em;
     font-weight: 500;
     border: 2px solid white;
     border-radius: 100em;
@@ -523,7 +542,7 @@ hr {
     visibility: hidden;
 }
 
-#basket2{
+#basket2 {
     width: 100px;
     height: 100px;
 }
@@ -550,7 +569,6 @@ hr {
     text-align: left;
 }
 
-
 #zagruska {
     box-sizing: border-box;
     height: 110px;
@@ -566,47 +584,301 @@ hr {
 
 #zagruska img {
     height: 80px;
-    width: 80px;   
+    width: 80px;
 }
 
-.quantity{
+.quantity {
     width: 20px;
     height: auto;
     float: left;
     padding: 0px;
     text-align: center;
-    margin:auto;
+    margin: auto;
     font-weight: 1200;
     font-size: 1em;
     font-family: 'Open Sans Condensed', sans-serif;
 }
+
 .quantity:hover {
     cursor: pointer;
 }
-.itemQuantity{
+
+.itemQuantity {
     width: 20px;
     height: auto;
     float: left;
     padding: 0px;
     text-align: center;
-    margin:auto;
+    margin: auto;
     font-weight: 1200;
     font-size: 1em;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.itemCurrentPrice{
+.itemCurrentPrice {
     padding-left: 100px;
 }
 
 #priceP {
+    margin-top: 10px; 
+    margin-left: 50px;
     font-size: 1.3em;
     color: #0073aa;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700;   
+    font-weight: 700;
+    width: 200px;
 }
-.removeBut{
+
+.removeBut {
     box-sizing: border-box;
     float: right;
 }
 
+footer {
+    margin-top: 1000px;
+    width: 100%;
+    background-color: white;
+}
+
+footer ul {
+    margin: 0 auto;
+    width: 80em;
+    list-style: none;
+    display: block;
+}
+
+footer ul li {
+    padding: 1em;
+    font-weight: 700;
+    color: #808080;
+    display: inline-block;
+}
+
+@media all and (max-width:750px) {
+    footer ul {
+        margin: 0 auto;
+        width: 100%;
+        list-style: none;
+        display: block;
+    }
+    footer ul li {
+        display: inline-flex;
+    }
+}
+
+footer ul li button {
+    border: none;
+    background-color: white;
+}
+
+footer img {
+    height: 50px;
+}
+
+footer ul:nth-child(2) {
+    width: 60em;
+}
+
+footer div {
+    padding: 0 20%;
+    line-height: 40px;
+    background-color: rgba(80, 80, 80, 0.2);
+    font-size: 13px;
+    color: #0d6490;
+    text-align: right;
+    width: 100%;
+}
+
+
+#loginMenu,
+#regMenu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+#loginMenu>div,
+#regMenu>div {
+    text-align: center;
+    border-radius: 1%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1f84a8;
+    background-color: white;
+    width: 670px;
+    height: 570px;
+    margin: 2% auto;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"] {
+    border-radius: 6px;
+    background: #efefef;
+    border: 1px solid #dfdfdf;
+    width: 80%;
+    line-height: 35px;
+    font-size: 25px;
+    margin: 2% 1%;
+}
+
+#loginMenu input[type="checkbox"] {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#loginMenu p {
+    line-height: 30px;
+}
+
+#loginMenu p a {
+    font-size: 18px;
+    font-style: oblique;
+    text-decoration: underline;
+    color: #808080;
+    float: left;
+    padding-left: 5em;
+    font-weight: 400;
+}
+
+#loginMenu p span {
+    float: right;
+    padding-right: 5em;
+}
+
+#loginMenu p span label {
+    color: #808080;
+    font-size: 16px;
+    position: relative;
+    bottom: 4px;
+}
+
+#loginMenu button {
+    width: 40%;
+    margin-top: 2%;
+}
+
+#loginMenu div button:nth-child(2) {
+    width: 30%;
+    height: 40px;
+    color: white;
+    font-size: 1.5em;
+    background-color: #1f84b8;
+    border: 1px solid #0f74a8;
+    border-radius: 6px;
+    margin-left: -15.3em;
+}
+
+#loginMenu div button:nth-child(2):hover {
+    border-color: #1f84b8;
+    background-color: #2f94c8;
+}
+
+#loginMenu div button:nth-child(2) span {
+    float: left;
+}
+
+#loginMenu div button:nth-child(4) {
+    margin-left: 10.6em;
+    border-color: #9c1915;
+    background-color: #c9433f;
+}
+
+#loginMenu div button:nth-child(4):hover {
+    border-color: #ac2925;
+    background-color: #d9534f;
+}
+
+#loginMenu div button:nth-child(7) {
+    border-color: #0f74a8;
+    background-color: #1f84b8;
+    color: white;
+}
+
+#loginMenu div button:nth-child(7):hover {
+    border-color: #1f84b8;
+    background-color: #2f94c8;
+}
+
+#exit,
+#exit1,
+#exitAcc {
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 100%;
+    color: red;
+    border: 3px solid #1f84b8;
+    width: 34px;
+}
+
+#exit:hover,
+#exit1:hover,
+#exitAcc:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+#exit {
+    position: relative;
+    bottom: 513px;
+    left: 647px;
+}
+
+#exit1 {
+    position: relative;
+    bottom: 474px;
+    left: 647px;
+}
+
+#exitAcc {
+    position: relative;
+    bottom: 189px;
+    left: 367px;
+}
+
+#login {
+    height: 50px;
+    width: 50px;
+    display: none;
+    position: relative;
+    bottom: 8px;
+    left: 10px;
+}
+
+
+#accMenu {
+    display: none;
+    width: 400px;
+    padding: 1em;
+    position: fixed;
+    top: 150px;
+    left: 1000px;
+    background-color: white;
+    border-radius: 0.5em;
+    border: 1px solid #1f84b8;
+}
+
+#accMenu p {
+    font-size: 30px;
+    padding: 5px;
+}
+
+#accMenu button {
+    width: 100px;
+    background-color: #1f84b8;
+    border: 1px solid #0e73a7;
+    border-radius: 0.5em;
+    color: white;
+    font-size: 20px;
+}
+
+#accMenu button:hover {
+    background-color: #3fa4d8;
+    border-color: #0e73a7;
+}

@@ -569,6 +569,8 @@ div.container-fluid {
 }
 
 #appearMenu {
+    font-size: 18px;
+    font-weight: 700;
     display: none;
     position: fixed;
     height: 100%;
@@ -585,6 +587,14 @@ div.container-fluid {
     border-bottom: 1px solid #0d6490;
     width: 100%;
     line-height: 45px;
+}
+#appearMenu ul li a{
+    color:black;
+    text-decoration: none;
+}
+#appearMenu ul li:hover,#appearMenu ul li a:hover {
+    cursor: pointer;
+    color:#0d6490;
 }
 
 
@@ -878,6 +888,24 @@ footer ul li {
     display: inline-block;
 }
 
+@media all and (max-width:750px) {
+    footer ul {
+        margin: 0 auto;
+        width: 100%;
+        list-style: none;
+        display: block;
+    }
+    /*footer ul li img:first-child{
+
+}*/
+    footer ul li {
+        /*padding: 1em;
+    font-weight: 700;
+    color: #808080;*/
+        display: inline-flex;
+    }
+}
+
 footer ul li button {
     border: none;
     background-color: white;
@@ -919,7 +947,8 @@ footer div {
     width: 80px;
 }
 
-#loginMenu,#regMenu {
+#loginMenu,
+#regMenu {
     display: none;
     width: 100%;
     height: 100%;
@@ -930,25 +959,25 @@ footer div {
     background-color: rgba(0, 0, 0, 0.35);
 }
 
-#loginMenu>div,#regMenu>div {
+#loginMenu>div,
+#regMenu>div {
     text-align: center;
     border-radius: 1%;
-    border-style: double;
-    border-width: 10px;
-    border-color: red;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1f84a8;
     background-color: white;
     width: 670px;
     height: 570px;
-    float: middle;
-    margin: 8% auto;
+    margin: 2% auto;
 }
 
-input[type="email"],input[type="text"],
+input[type="email"],
+input[type="text"],
 input[type="password"] {
     border-radius: 6px;
     background: #efefef;
     border: 1px solid #dfdfdf;
-    ;
     width: 80%;
     line-height: 35px;
     font-size: 25px;
@@ -1031,4 +1060,87 @@ input[type="password"] {
 #loginMenu div button:nth-child(7):hover {
     border-color: #1f84b8;
     background-color: #2f94c8;
+}
+
+#exit,
+#exit1,
+#exitAcc {
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 100%;
+    color: red;
+    border: 3px solid #1f84b8;
+    width: 34px;
+}
+
+#exit:hover,
+#exit1:hover,
+#exitAcc:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+#exit {
+    position: relative;
+    bottom: 513px;
+    left: 647px;
+}
+
+#exit1 {
+    position: relative;
+    bottom: 474px;
+    left: 647px;
+}
+
+#exitAcc {
+    position: relative;
+    bottom: 189px;
+    left: 367px;
+}
+
+#login {
+    height: 50px;
+    width: 50px;
+    display: none;
+    position: relative;
+    bottom: 8px;
+    left: 10px;
+}
+
+.openBtn:last-child {
+    position: relative;
+    bottom: 7px;
+    right: 10px;
+}
+
+#accMenu {
+    display: none;
+    width: 400px;
+    padding: 1em;
+    position: fixed;
+    top: 150px;
+    left: 1000px;
+    background-color: white;
+    border-radius: 0.5em;
+    border: 1px solid #1f84b8;
+}
+
+#accMenu p {
+    font-size: 30px;
+    padding: 5px;
+}
+
+#accMenu button {
+    width: 100px;
+    background-color: #1f84b8;
+    border: 1px solid #0e73a7;
+    border-radius: 0.5em;
+    color: white;
+    font-size: 20px;
+}
+
+#accMenu button:hover {
+    background-color: #3fa4d8;
+    border-color: #0e73a7;
 }
